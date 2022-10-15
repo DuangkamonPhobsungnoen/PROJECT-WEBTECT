@@ -17,6 +17,15 @@
             echo "เรื่องย่อ = $book->description<br><br>";
         }
     }
+
+    $url2 = "article.json";
+    $response2 = file_get_contents($url2); 
+    $result2 = json_decode($response2); 
+    foreach ($result2 as $article) {
+        echo "name : $article->name<br>";
+        echo "บทความ : $article->description<br><br>";
+    }
+    
     ?>
 </body>
 </html>
