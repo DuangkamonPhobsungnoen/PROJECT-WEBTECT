@@ -12,8 +12,9 @@
     $result = json_decode($response); 
     foreach ($result as $category) {
         foreach ($category as $book){
-            echo "name = $book->title
-            writer = $book->writer";
+            echo "name = $book->title<br>";
+            echo "writer = $book->writer<br>";
+            echo "เรื่องย่อ = $book->description<br><br>";
         }
     }
     ?>
