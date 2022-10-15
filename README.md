@@ -10,6 +10,7 @@
 ## ข้อมูลที่ใช้
 
 ## แผนภาพ
->**`[Click link](https://www.figma.com/file/8t2KfjGchE0swQF0Cy7pbi/webTech?node-id=0%3A1)`**
+>**`Figma`**
+**[Click link](https://www.figma.com/file/8t2KfjGchE0swQF0Cy7pbi/webTech?node-id=0%3A1)**
 
 ## สมาชิก
