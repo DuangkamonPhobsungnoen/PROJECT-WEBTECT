@@ -29,7 +29,7 @@
         echo "<img src='$article->cover' width='50%'>";
         echo "<p>ID : $article->id</p>";
         echo "<p>name : $article->name</p>";
-        echo "<p>บทความ : $article->description</p><hr>";
+        echo "<p>บทความ : $article->description</p><hr style='border-top: 3px solid red;'>";
     }
     
     ?>
