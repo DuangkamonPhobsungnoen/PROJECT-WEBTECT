@@ -22,3 +22,11 @@ ul.navbar-nav a:active { color: var(--green) !important; }
 .navbar{
     font-size: 16px;
 }
+
+.cart{
+    fill: black;
+}
+
+.cart:hover{
+    fill: var(--green);
+}
