@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
 *{
     font-family: 'Kanit', sans-serif;
+    --green:#31ad99;
 }
 body{
+    width: 100%;
     margin: 2em;
+    overflow-x: hidden;
+}
+.navbar > .nav-item >  {
+    color: var(--green);
+}
+footer{
+    line-height: 2em;
+}
+
+button.navbar-toggler{
+    outline: none;
 }
