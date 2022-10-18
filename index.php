@@ -12,14 +12,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <style>
         body {
-            padding: 3%;
             font-size: 20px;
         }
     </style>
 </head>
 
 <body>
+    <?php include("navbar.php"); ?>
+
     <?php
+
     $url = "book.json";
     $response = file_get_contents($url);
     $result = json_decode($response);
@@ -69,8 +71,9 @@
     </a>
     </div>
 </div>";
-
     ?>
+
+    <?php include("footer.php"); ?>
 </body>
 
 </html>
