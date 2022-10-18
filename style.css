@@ -9,13 +9,11 @@ body{
     margin: 2em;
     overflow-x: hidden;
 }
-.navbar > .nav-item >  {
-    color: var(--green);
-}
+
 footer{
     line-height: 2em;
 }
 
-button.navbar-toggler{
-    outline: none;
-}
+ul.navbar-nav a:hover { color: var(--green) !important; }
+ul.navbar-nav a:focus { color: var(--green) !important; }
+ul.navbar-nav a:active { color: var(--green) !important; }
