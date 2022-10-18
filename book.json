@@ -329,7 +329,7 @@
         }
     ],
 
-    "Memoir": [{
+    "memoir": [{
             "id": 71,
             "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1428044384.png",
             "title": "SIAM DISCOVERY สยาม มนุษย์ สถิต",
@@ -387,7 +387,7 @@
             "description": "PLARIEX พาระลึกอดีตไปสมัยที่ยังเป็นเด็กหญิงชั้นมัธยมยุค 90s เรามีอะไรอยู่ในกระเป๋า ข้อความในเพจเจอร์พิมพ์ว่าอะไร ถ่ายรูปคู่ใครในสมุดสติ๊กเกอร์ รู้สึกยังไงเมื่อกำลังจะได้ใส่ชุดนักเรียน ม.ปลาย และเกิดอะไรขึ้นในวันสุดท้ายของการเรียน"
         }
     ],
-    "Non-Fiction": [{
+    "non-fiction": [{
             "id": 81,
             "cover": "https://salmonbooks.net/wp-content/uploads/2021/04/04_WORLD-WAR-TOOLS-04-1000x1000.jpg",
             "title": "WORLD WAR TOOLS สงครามโลกในสิ่งของ",
