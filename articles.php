@@ -12,7 +12,26 @@
 </head>
 <body>
     <?php include("navbar.php"); ?>
-    Articles page
+
+    <?php
+    $url2 = "article.json";
+    $response2 = file_get_contents($url2); 
+    $result2 = json_decode($response2);
+    echo "<div class='container'>";
+    echo "<h1>Articles</h1>";
+    echo "<div class='row'>";
+    foreach ($result2 as $article) {
+        
+        echo "<div class='col-sm-4 mb-4'>";
+        echo "<div class='card'>";
+        echo "<img class='card-img-top' src='$article->cover' alt='Card image cap'>";
+        echo "<div class='card-body'>";
+        echo "<p class='card-text'> <b>$article->name </p>";
+        echo "</div></div></div>";
+    }
+    echo "</div></div><br>";
+    ?>
+
     <?php include("footer.php"); ?>
 </body>
 </html>
