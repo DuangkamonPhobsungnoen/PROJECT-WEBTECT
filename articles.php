@@ -18,11 +18,10 @@
     $response2 = file_get_contents($url2); 
     $result2 = json_decode($response2);
     echo "<div class='container'>";
-    echo "<h1>Articles</h1>";
+    echo "<h1 class='my-5'>Articles</h1>";
     echo "<div class='row'>";
     foreach ($result2 as $article) {
-        
-        echo "<div class='col-sm-4 mb-4'>";
+        echo "<div class='col-lg-4 col-md-6 col-sm-12 mb-4'>";
         echo "<div class='card'>";
         echo "<img class='card-img-top' src='$article->cover' alt='Card image cap'>";
         echo "<div class='card-body'>";

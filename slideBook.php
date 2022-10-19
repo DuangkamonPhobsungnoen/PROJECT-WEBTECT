@@ -28,7 +28,7 @@
                                         <span> $book->writer </span>
                                     </div>
                                     <div class='entry-content'>
-                                        <p>$book->description</p>
+                                        <p class='max-lines'>$book->description</p>
                                     </div>
                                 </div>
                             </div>
