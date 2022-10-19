@@ -3,11 +3,11 @@
 *{
     font-family: 'Kanit', sans-serif;
     --green:#31ad99;
+    --price: #fc5e03;
 }
 body{
     width: 100%;
     overflow-x: hidden;
-    font-size: 20px;
 }
 
 footer{
