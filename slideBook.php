@@ -4,8 +4,9 @@
     $response = file_get_contents($url);
     $result = json_decode($response);
     echo "<div class='container'>
-            <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel'>
-                <div class='carousel-inner'>";
+            <h1>New Release</h1> <br>
+                <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel'>
+                    <div class='carousel-inner'>";
     foreach ($result as $category) {
         foreach ($category as $book) {
             if($book->id==11) {
