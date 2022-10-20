@@ -19,12 +19,12 @@ ul.navbar-nav a:hover { color: var(--green) !important; }
 ul.navbar-nav a:focus { color: var(--green) !important; }
 ul.navbar-nav a:active { color: var(--green) !important; }
 
-.navbar{
-    font-size: 16px;
+.active a{
+    color: var(--green) !important;
 }
 
-.cart{
-    fill: black;
+.navbar{
+    font-size: 16px;
 }
 
 .cart:hover{

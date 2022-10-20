@@ -11,8 +11,8 @@
         </button>
 
         <div class="collapse navbar-collapse mb-sm-3 mb-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ml-3">
+            <ul class="navbar-nav mr-auto nav">
+                <li class="nav-item ml-3 active">
                     <a class="nav-link" href="index.php">HOME</a>
                 </li>
                 <li class="nav-item ml-3">

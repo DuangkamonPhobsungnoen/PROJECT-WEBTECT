@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row py-3">
             <div class="col-sm-6 my-auto">
-                จัดทำโดย <br>
+                <b>จัดทำโดย</b> <br>
                 สุธีรา พิทักษ์ผลิน 64070112 <br>
                 ดวงกมล พบสูงเนิน 64070149 <br>
                 ทัตพร ตันนารัตน์ 64070153 <br>
