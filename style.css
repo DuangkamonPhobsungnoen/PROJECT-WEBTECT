@@ -45,3 +45,41 @@ ul.navbar-nav a:active {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+/* book */
+/* .p{ text-align: center;} */
+.btn{
+    width: 50px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    height: 50px !important;
+    text-align: center;
+    padding: 0px;
+    font-size:15px;
+    border-radius: 7px;
+    margin-right: 20px;
+    }
+.b1{
+    background-color: #CC80C4;
+}
+.b2{
+    background-color: #F4DB9B;
+}
+.b3{
+    background-color: #83C8DE;
+}
+.b4{
+    background-color: #ED8181;
+}
+.b5{
+    background-color: #78B694;
+}
+.b6{
+    background-color: #7489D1;
+}
+.b7{
+    background-color: #D3CE50;
+}
+.b8{
+    background-color: #E09149;
+}
