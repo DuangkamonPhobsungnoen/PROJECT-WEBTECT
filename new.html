@@ -11,13 +11,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Book by Sababooks</title>
 </head>
 <body>
     <div class="container" method="POST">
         <div class="d-flex justify-content-center text-center">
             <div class="btn">
-                <button name="cate1" type="submit" class="btn b1" value="comic"></button>
+                <button name="cate1" type="submit" class="btn b1" onclick="showBook('comic')"></button>
                 <br>
                 <p>Comic</p>
             </div>
@@ -58,6 +59,8 @@
             </div>
         </div>
 
+        <div id="show"></div>
     </div>
+
 </body>
 </html>
