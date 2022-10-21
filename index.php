@@ -32,6 +32,10 @@
         <?php include("homearticle.php"); ?>
     </div>
 
+    <div class="my-5">
+        <?php include("shop.html"); ?>
+    </div>
+
     <?php include("footer.php"); ?>
 </body>
 

@@ -17,6 +17,8 @@
         <img class="Slides" src="https://media.discordapp.net/attachments/1031228521613381724/1031971926349979658/2.png?width=1440&height=480" width="100%">
         <img class="Slides" src="https://media.discordapp.net/attachments/1031228521613381724/1031971926727471194/1.png?width=1440&height=480" width="100%">
         <img class="Slides" src="https://media.discordapp.net/attachments/1031228521613381724/1031971927109144606/3.png?width=1440&height=480" width="100%">
+        <img class="Slides" src="https://media.discordapp.net/attachments/1031228521613381724/1033016334608515092/IMG_0093.jpg?width=1440&height=480" width="100%">
+        <img class="Slides" src="https://media.discordapp.net/attachments/1031228521613381724/1033016334952452206/IMG_0094.jpg?width=1440&height=480" width="100%">
     </div>
 
 
@@ -35,7 +37,7 @@
                 slideIndex = 1
             }
             x[slideIndex - 1].style.display = "block";
-            setTimeout(carousel, 2800);
+            setTimeout(carousel, 2000);
         }
     </script>
 </body>

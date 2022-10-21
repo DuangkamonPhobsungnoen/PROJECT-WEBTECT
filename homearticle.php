@@ -32,7 +32,7 @@
             echo "</div></div></div>";
         }
     }
-    echo "</div></div><br>";
+    echo "</div></div>";
     ?>
 </body>
 
