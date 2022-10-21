@@ -22,6 +22,7 @@
 
 <body>
     <?php include("navbar.php"); ?>
+<<<<<<< Updated upstream
     
     
     <div class="container" method="POST">
@@ -74,6 +75,30 @@
             $url = "book.json";
             $response = file_get_contents($url);
             $result = json_decode($response);
+=======
+    <div class='container my-5'>
+            <div class="all">
+                <form action="" method="POST">
+                    <select name="cate" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option value="default" selected>Category</option>
+                        <option value="comic">Comic</option>
+                        <option value="comicessay">Comic Essay</option>
+                        <option value="conceptidea">Concept Idea</option>
+                        <option value="culture">Culture</option>
+                        <option value="novel">Novel</option>
+                        <option value="journey">Journey</option>
+                        <option value="memoir">Memoir</option>
+                        <option value="non-fiction">Non-fiction</option>
+                    </select>
+                    <button type="submit" name="submit">Submit</button>
+                </form>
+                <div class='row m-2'>
+                <?php
+            $url = "book.json";
+            $response = file_get_contents($url);
+            $result = json_decode($response);
+
+>>>>>>> Stashed changes
             if(isset($_POST['submit'])){
                 if(!empty($_POST['cate'])) {
                     $getCat = $_POST['cate'];
@@ -82,16 +107,17 @@
                             if($book->cate2 == $getCat || $getCat == "default"){
                                 echo "
                                 <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
-                                    <div class='card h-100'>
-                                        <img class='card-img-top' src='$book->cover' alt='Card image cap'>
-                                        <div class='card-body text-center'>
-                                            <h5 class='card-title font-weight-bold'>$book->title</h5>
-                                            <p class='text-muted small'>$book->writer</p>
-                                            <h5 class='font-weight-bold' style='color:var(--price);'>$book->price.-</h5>
-                                            <a href='#' class='btn btn-dark'><i class='fa fa-shopping-cart'></i>เพิ่มใส่รถเข็น </a>
+                                <a href='#' style='text-decoration: none'>
+                                    <div class='card border-0'>
+                                        <img class='card-img-top bg-grey' src='$book->cover'>
+                                        <div class='card-body text-left'>
+                                            <h5 class='card-title text-dark font-weight-bold mb-0'>$book->title</h5>
+                                            <p class='text-muted small'$book->writer</p>
+                                            <h5 class='font-weight-bold' style='color:var(--green);'>฿$book->price</h5>
                                         </div>
                                     </div>
-                                </div>";
+                                </a>
+                            </div>";
                             }
                         }
                     }
@@ -103,28 +129,34 @@
                         foreach ($category as $book) {
                             echo "
                             <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
-                                    <div class='card h-100'>
-                                        <img class='card-img-top' src='$book->cover' alt='Card image cap'>
-                                        <div class='card-body text-center'>
-                                            <h5 class='card-title font-weight-bold'>$book->title</h5>
-                                            <p class='text-muted small'>$book->writer</p>
-                                            <h5 class='font-weight-bold' style='color:var(--price);'>$book->price.-</h5>
-                                            <a href='#' class='btn btn-dark'><i class='fa fa-shopping-cart'></i>เพิ่มใส่รถเข็น </a>
+                                <a href='#' style='text-decoration: none'>
+                                    <div class='card border-0'>
+                                        <img class='card-img-top bg-grey' src='$book->cover'>
+                                        <div class='card-body text-left'>
+                                            <h5 class='card-title text-dark font-weight-bold mb-0'>$book->title</h5>
+                                            <p class='text-muted small'$book->writer</p>
+                                            <h5 class='font-weight-bold' style='color:var(--green);'>฿$book->price</h5>
                                         </div>
                                     </div>
-                                </div>";
+                                </a>
+                            </div>";
                         }
                     }
                 }
+<<<<<<< Updated upstream
             
         ?>
+=======
+        ?>
+            </div>
+>>>>>>> Stashed changes
         </div>
     </div>
 </div>
     <?php include("footer.php"); ?>
 
     <script>
-        
+
     </script>
 </body>
 
