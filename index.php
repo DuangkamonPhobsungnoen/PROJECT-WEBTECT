@@ -25,7 +25,15 @@
     </div>
 
     <div class="my-5">
+        <?php include("recommend.php"); ?>
+    </div>
+
+    <div class="my-5">
         <?php include("homearticle.php"); ?>
+    </div>
+
+    <div class="my-5">
+        <?php include("shop.html"); ?>
     </div>
 
     <?php include("footer.php"); ?>

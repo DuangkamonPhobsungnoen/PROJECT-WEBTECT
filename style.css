@@ -1,37 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
-*{
+* {
     font-family: 'Kanit', sans-serif;
-    --green:#31ad99;
+    --green: #31ad99;
     --price: #fc5e03;
 }
-body{
+
+body {
     width: 100%;
     overflow-x: hidden;
 }
 
-footer{
+footer {
     line-height: 2em;
     font-size: 14px;
 }
 
-ul.navbar-nav a:hover { color: var(--green) !important; }
-ul.navbar-nav a:focus { color: var(--green) !important; }
-ul.navbar-nav a:active { color: var(--green) !important; }
-
-.active a{
+ul.navbar-nav a:hover {
     color: var(--green) !important;
 }
 
-.navbar{
+ul.navbar-nav a:focus {
+    color: var(--green) !important;
+}
+
+ul.navbar-nav a:active {
+    color: var(--green) !important;
+}
+
+.active a {
+    color: var(--green) !important;
+}
+
+.navbar {
     font-size: 16px;
 }
 
-.cart:hover{
+.cart:hover {
     fill: var(--green);
 }
 
-.max-lines{
+.max-lines {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
