@@ -148,7 +148,7 @@
 
                         echo "
                             <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
-                                <a href='bookDetail.html' onclick='setBook($book->id, $book->cover, $book->title, $book->writer, $book->price, $book->description);' style='text-decoration: none'>
+                            <a href='#' onclick='setBook($book->id, $book->cover, $book->title, $book->writer, $book->price, $book->description);' style='text-decoration: none;'>
                                 <div class='card border-0'>
                                     <img class='card-img-top bg-grey' src='$book->cover'>
                                     <div class='card-body text-left'>
