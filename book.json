@@ -2,7 +2,7 @@
     "comic": [{
             "id": 11,
             "cate2": "comic",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1647254410.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1647254410.jpg",
             "title": "10 THINGS I HATE ABOUT MAOHAI บ้านนี้หมาไม่เห่า",
             "writer": "พลอยจะเพลิน เผ่าพันเลิด",
             "price": 230,
@@ -11,7 +11,7 @@
         {
             "id": 12,
             "cate2": "comic",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1634812412.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1634812412.jpg",
             "title": "HAVE A GOOD DIE วันนี้คือวันตายของเจ้า!",
             "writer": "PPONG",
             "price": 195,
@@ -20,7 +20,7 @@
         {
             "id": 13,
             "cate2": "comic",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1583728429.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1583728429.jpg",
             "title": "JUICE : ARRIVALS",
             "writer": "ART JEENO",
             "price": 260,
@@ -30,7 +30,7 @@
         {
             "id": 14,
             "cate2": "comic",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1583492545.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1583492545.jpg",
             "title": "#ทีมขี้เกียจ",
             "writer": "ทีปกร วุฒิพิทยามงคล",
             "price": 290,
@@ -39,7 +39,7 @@
         {
             "id": 15,
             "cate2": "comic",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586967319.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586967319.jpg",
             "title": "ชีวิตดีดีที่ลงตัว LIFE IS BETTER",
             "writer": "สะอาด",
             "price": 240,
@@ -48,7 +48,7 @@
         {
             "id": 16,
             "cate2": "comic",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586967734.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586967734.jpg",
             "title": "BEST BEFORE",
             "writer": "TUNA Dunn",
             "price": 225,
@@ -57,7 +57,7 @@
         {
             "id": 17,
             "cate2": "comic",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586968685.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586968685.jpg",
             "title": "I LIKE LIKE YOU",
             "writer": "TUNA DUNN",
             "price": 160,
@@ -67,7 +67,7 @@
     "comicessay": [{
             "id": 21,
             "cate2": "comicessay",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586966772.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586966772.jpg",
             "title": "VANCOUVER WANDERLAND",
             "writer": "toma",
             "price": 225,
@@ -76,7 +76,7 @@
         {
             "id": 22,
             "cate2": "comicessay",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586968712.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586968712.jpg",
             "title": "ชีวิต 175 ซม.",
             "writer": "PLARIEX",
             "price": 160,
@@ -85,7 +85,7 @@
         {
             "id": 23,
             "cate2": "comicessay",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586968828.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586968828.jpg",
             "title": "OFFICE SISTA",
             "writer": "PLARIEX",
             "price": 165,
@@ -94,7 +94,7 @@
         {
             "id": 24,
             "cate2": "comicessay",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586969105.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586969105.jpg",
             "title": "100 ขั้นตอนสู่การเลิกรา",
             "writer": "ทีปกร วุฒิพิทยามงคล",
             "price": 200,
@@ -103,7 +103,7 @@
         {
             "id": 25,
             "cate2": "comicessay",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586969198.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586969198.jpg",
             "title": "100 ขั้นตอนสู่ความล้มเหลว",
             "writer": "ทีปกร วุฒิพิทยามงคล",
             "price": 200,
@@ -113,7 +113,7 @@
     "conceptidea": [{
             "id": 31,
             "cate2": "conceptidea",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/03/c_1553001566-1000x1000.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1553001566-1000x1000.png",
             "title": "ผจญภัยตามใครเลือก",
             "writer": "กิตติพล สรัคคานนท์",
             "price": 200,
@@ -122,7 +122,7 @@
         {
             "id": 32,
             "cate2": "conceptidea",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/03/c_1539698843.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1539698843.png",
             "title": "SUFFERING SHOP ผลิตภัณฑ์ระงับกลุ้ม",
             "writer": "เจหวาน",
             "price": 185,
@@ -131,7 +131,7 @@
         {
             "id": 33,
             "cate2": "conceptidea",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/03/c_1542620844.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1542620844.jpg",
             "title": "PARIS IN PAIRS ปารีสบนดาวดวงอื่น",
             "writer": "โชติกา ปริณายก",
             "price": 195,
@@ -140,7 +140,7 @@
         {
             "id": 34,
             "cate2": "conceptidea",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2020/02/200218_MNM_LOST-04-1000x1000.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2020/02/200218_MNM_LOST-04-1000x1000.png",
             "title": "CHAPTER 1: LOST",
             "writer": "รวมนักเขียน",
             "price": 245,
@@ -149,7 +149,7 @@
         {
             "id": 35,
             "cate2": "conceptidea",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/04/c_1467795641.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/04/c_1467795641.jpg",
             "title": "DEEP DARK FEARS",
             "writer": "FRAN KRAUSE (เขียน) / PAWIN FEY (แปล)",
             "price": 195,
@@ -158,7 +158,7 @@
         {
             "id": 36,
             "cate2": "conceptidea",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1428039934.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1428039934.png",
             "title": "ONCE UBON A TIME อุบลเป็นเมืองชิคๆ",
             "writer": "ธนชาติ ศิริภัทราชัย",
             "price": 250,
@@ -167,7 +167,7 @@
         {
             "id": 37,
             "cate2": "conceptidea",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412763964.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412763964.png",
             "title": "FOOD NOTE จอมโหดกะทะเล็ก",
             "writer": "MALIMALI (เขียน) / ทีปกร วุฒิพิทยามงคล (วาด)",
             "price": 270,
@@ -177,7 +177,7 @@
     "culture": [{
             "id": 41,
             "cate2": "culture",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/03/c_1522226715-1000x1000.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1522226715-1000x1000.jpg",
             "title": "ย่องเบาเข้าญี่ปุ่น",
             "writer": "โตมร ศุขปรีชา",
             "price": 285,
@@ -186,7 +186,7 @@
         {
             "id": 42,
             "cate2": "culture",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/04/c_1490758085.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/04/c_1490758085.jpg",
             "title": "ART IS ART, ART IS NOT ART อะไร (แม่ง) ก็เป็นศิลปะ",
             "writer": "ภาณุ บุญพิพัฒนาพงศ์",
             "price": 340,
@@ -195,7 +195,7 @@
         {
             "id": 43,
             "cate2": "culture",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1413982411.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1413982411.png",
             "title": "เอ๊ะ!! เจป๊อป A GUIDE TO JAPANESE POPULATION",
             "writer": "ณัฐพงศ์ ไชยวานิชย์ผล",
             "price": 180,
@@ -204,7 +204,7 @@
         {
             "id": 44,
             "cate2": "culture",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1457543197.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1457543197.png",
             "title": "TROLL WAY ทางสายเกรียน",
             "writer": "สฤณี อาชวานันทกุล (เขียน) / ทีปกร วุฒิพิทยามงคล (วาด)",
             "price": 256,
@@ -213,7 +213,7 @@
         {
             "id": 45,
             "cate2": "culture",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/04/c_1476446239.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/04/c_1476446239.jpg",
             "title": "NEW YORK 1ST TIME นิวยอร์กตอนแรกๆ… [RE-COVER EDITION]",
             "writer": "ธนชาติ ศิริภัทราชัย",
             "price": 270,
@@ -222,7 +222,7 @@
         {
             "id": 46,
             "cate2": "culture",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/03/c_1539699222.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1539699222.png",
             "title": "LONG LONG WAY",
             "writer": "ศรภัทร ภัทราคร",
             "price": 340,
@@ -231,7 +231,7 @@
         {
             "id": 47,
             "cate2": "culture",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/04/c_1490758117.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/04/c_1490758117.jpg",
             "title": "THE NERD OF MICROSOFT",
             "writer": "โสภณ ศุภมั่งมี",
             "price": 280,
@@ -242,7 +242,7 @@
     "novel": [{
             "id": 51,
             "cate2": "novel",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2022/10/MNM_CONVER-04.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2022/10/MNM_CONVER-04.png",
             "title": "CONVERSATIONS WITH FRIENDS แค่เพื่อนคุย",
             "writer": "Sally Rooney (เขียน) / นัทธมน เปรมสำราญ (แปล)",
             "price": 302,
@@ -251,7 +251,7 @@
         {
             "id": 52,
             "cate2": "novel",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1663316695.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1663316695.jpg",
             "title": "คุณเคนต์และข้าพเจ้า MS. KENT & ME",
             "writer": "LADYS",
             "price": 149,
@@ -260,7 +260,7 @@
         {
             "id": 53,
             "cate2": "novel",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1651033911.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1651033911.jpg",
             "title": "#หลงยุคหลุดสมัย",
             "writer": "วัน รมณีย์",
             "price": 85,
@@ -269,7 +269,7 @@
         {
             "id": 54,
             "cate2": "novel",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1583728438.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1583728438.jpg",
             "title": "YOU SADLY SMILE IN THE PROFILE PICTURE",
             "writer": "ธนชาติ ศิริภัทราชัย",
             "price": 189,
@@ -278,7 +278,7 @@
         {
             "id": 55,
             "cate2": "novel",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586966933.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586966933.jpg",
             "title": "มรดกตกผลึก",
             "writer": "จักรพันธุ์ ขวัญมงคล",
             "price": 194,
@@ -287,7 +287,7 @@
         {
             "id": 56,
             "cate2": "novel",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586967805.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586967805.jpg",
             "title": "YOUNG & WILD",
             "writer": "จักรพันธุ์ ขวัญมงคล",
             "price": 167,
@@ -296,7 +296,7 @@
         {
             "id": 57,
             "cate2": "novel",
-            "cover": "https://c.min.ms/s/storefile/2/itemgallery/c_1586969015.jpg",
+            "cover": "c.min.ms/s/storefile/2/itemgallery/c_1586969015.jpg",
             "title": "เขตการปกครองมายองเนส",
             "writer": "จิราภรณ์ วิหวา",
             "price": 144,
@@ -307,7 +307,7 @@
     "journey": [{
             "id": 61,
             "cate2": "journey",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/07/orntheway-01.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/07/orntheway-01.png",
             "title": "ORN THE WAY",
             "writer": "พัศชนันท์ เจียจิรโชติ",
             "price": 330,
@@ -316,7 +316,7 @@
         {
             "id": 62,
             "cate2": "journey",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/04/c_1476445631.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/04/c_1476445631.jpg",
             "title": "LONDON CALLING",
             "writer": "Art Jeeno",
             "price": 221,
@@ -325,7 +325,7 @@
         {
             "id": 63,
             "cate2": "journey",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1428043885.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1428043885.png",
             "title": "มิชชั่น กินพอสสิเบิล JAPAN SUPER BOWL",
             "writer": "วิชัย",
             "price": 239,
@@ -334,7 +334,7 @@
         {
             "id": 64,
             "cate2": "journey",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1428038706.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1428038706.png",
             "title": "OUT IN AFRICA",
             "writer": "อาทิตย์ ประสาทกุล",
             "price": 248,
@@ -343,7 +343,7 @@
         {
             "id": 65,
             "cate2": "journey",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412763532.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412763532.png",
             "title": "INDIA DIARY อินดง อินเดีย",
             "writer": "SAHRED TOY",
             "price": 176,
@@ -352,7 +352,7 @@
         {
             "id": 66,
             "cate2": "journey",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/06/c_1552556434.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/06/c_1552556434.png",
             "title": "THE REAL ALASKA อลาสก้าล้านเปอร์เซ็นต์",
             "writer": "ธนชาติ ศิริภัทราชัย",
             "price": 243,
@@ -361,7 +361,7 @@
         {
             "id": 67,
             "cate2": "journey",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1428039004.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1428039004.png",
             "title": "KOREA DIARY มนุษย์โกอันยอง",
             "writer": "SAHRED TOY",
             "price": 230,
@@ -372,7 +372,7 @@
     "memoir": [{
             "id": 71,
             "cate2": "memoir",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1428044384.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1428044384.png",
             "title": "SIAM DISCOVERY สยาม มนุษย์ สถิต",
             "writer": "คันฉัตร รังษีกาญจน์ส่อง",
             "price": 190,
@@ -381,7 +381,7 @@
         {
             "id": 72,
             "cate2": "memoir",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412751153.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412751153.png",
             "title": "JOYSTICK",
             "writer": "นวพล ธำรงรัตนฤทธิ์",
             "price": 180,
@@ -390,7 +390,7 @@
         {
             "id": 73,
             "cate2": "memoir",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1428039404.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1428039404.png",
             "title": "ศิลป์ซิตี้",
             "writer": "IANNNNN",
             "price": 215,
@@ -399,7 +399,7 @@
         {
             "id": 74,
             "cate2": "memoir",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412839249.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412839249.png",
             "title": "ชีวิต 18+ เกรียนเจเนอเรชั่น",
             "writer": "วิชัย (เขียน) / SAHRED TOY (วาด)",
             "price": 200,
@@ -408,7 +408,7 @@
         {
             "id": 75,
             "cate2": "memoir",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412839667.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412839667.png",
             "title": "วัตถุ WI-FI",
             "writer": "คันฉัตร รังษีกาญจน์ส่อง",
             "price": 150,
@@ -417,7 +417,7 @@
         {
             "id": 76,
             "cate2": "memoir",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412750988.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412750988.png",
             "title": "OLD SCHOOL หนังสือเล่มนี้มีระเบิด",
             "writer": "ณัฐชนน มหาอิทธิดล",
             "price": 140,
@@ -426,7 +426,7 @@
         {
             "id": 77,
             "cate2": "memoir",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1457543049.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1457543049.png",
             "title": "ชีวิต 18- GIRL’S GENERATION",
             "writer": "PLARIEX",
             "price": 170,
@@ -436,7 +436,7 @@
     "non-fiction": [{
             "id": 81,
             "cate2": "non-fiction",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2021/04/04_WORLD-WAR-TOOLS-04-1000x1000.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2021/04/04_WORLD-WAR-TOOLS-04-1000x1000.jpg",
             "title": "WORLD WAR TOOLS สงครามโลกในสิ่งของ",
             "writer": "มนสิชา รุ่งชวาลนนท์",
             "price": 330,
@@ -445,7 +445,7 @@
         {
             "id": 82,
             "cate2": "non-fiction",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2020/03/200312_MNM_EMO-04-1000x1000.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2020/03/200312_MNM_EMO-04-1000x1000.png",
             "title": "THE EMOTIONAL MAN มนุษย์อารมณ์",
             "writer": "ณัฐวุฒิ เผ่าทวี",
             "price": 185,
@@ -454,7 +454,7 @@
         {
             "id": 83,
             "cate2": "non-fiction",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412839006.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412839006.png",
             "title": "สูตรสุคติ",
             "writer": "ณัฐพงศ์ ไชยวานิชย์ผล (แปล) / Bunpei Yorifuji (เขียน)",
             "price": 195,
@@ -463,7 +463,7 @@
         {
             "id": 84,
             "cate2": "non-fiction",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1412671242.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412671242.png",
             "title": "เครื่องปรุงจักรวาล",
             "writer": "MISTER TOMPKIN (เขียน) / ทีปกร วุฒิพิทยามงคล (วาด)",
             "price": 220,
@@ -472,7 +472,7 @@
         {
             "id": 85,
             "cate2": "non-fiction",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/05/c_1413982359.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1413982359.png",
             "title": "OUT/LINE",
             "writer": "Art Jeeno",
             "price": 175,
@@ -481,7 +481,7 @@
         {
             "id": 86,
             "cate2": "non-fiction",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/03/c_1539701274-1000x1000.png",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1539701274-1000x1000.png",
             "title": "ศิลปะของความผิดหวัง",
             "writer": "กิตติพล สรัคคานนท์",
             "price": 200,
@@ -490,7 +490,7 @@
         {
             "id": 87,
             "cate2": "non-fiction",
-            "cover": "https://salmonbooks.net/wp-content/uploads/2019/03/c_1508237092.jpg",
+            "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1508237092.jpg",
             "title": "THAIS IN WORLD HISTORY ผจญไทยในแดนเทศ",
             "writer": "อาชญาสิทธิ์ ศรีสุวรรณ",
             "price": 265,
