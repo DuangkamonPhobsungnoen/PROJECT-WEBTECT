@@ -20,7 +20,7 @@
                         <div class='featured-item row align-items-stretch'>
                             <div class='col-lg-1'></div>
                             <div class='col-lg-3'>
-                                <img src='$book->cover' width='100%' class='img-fluid rounded' /></a>
+                                <img src='https://$book->cover' width='100%' class='img-fluid rounded' /></a>
                             </div>
                             <div class='col-lg-7 my-auto'>
                                 <div class='info'

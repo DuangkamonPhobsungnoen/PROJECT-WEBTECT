@@ -21,14 +21,14 @@
 </head>
 
 <body onload="bookDetail();">
+    <?php include("navbar.php"); ?>
 
     <div class='container my-5'>
-        <div class='row frame' id="bookDetail">
-        </div>
-
-
+        <div class='row frame' id="bookDetail"></div>
         <div class="h1 my-5">Related Books</div>
     </div>
+
+    <?php include("footer.php"); ?>
 
 </body>
 

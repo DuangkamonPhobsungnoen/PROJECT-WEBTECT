@@ -167,21 +167,27 @@
         <div class="row">
 
             <?php
-            function printBook($cover, $title, $writer, $price){
+            function printBook($id, $cover, $title, $writer, $price, $description){
                 echo "
-                <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
-                    <a href='#' style='text-decoration: none;'>
-                    <div class='card border-0'>
-                        <img class='card-img-top bg-grey' src='$cover'>
-                        <div class='card-body text-left'>
-                            <h5 class='card-title text-dark font-weight-bold mb-0'>$title</h5>
-                            <p class='text-muted small'>$writer</p>
-                            <h5 class='font-weight-bold' style='color:var(--green);'>฿$price</h5>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                ";
+                            <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";?>
+
+                            <a href='bookDetail.php'
+                                onclick="setBook(<?php echo $id.',\''.$cover.'\',\''.$title.'\',\''.$writer.'\','.$price.',\''.$description.'\''?>)"
+                                style='text-decoration: none;'>
+
+                            <?php
+                            echo "
+                                <div class='card border-0'>
+                                    <img class='card-img-top bg-grey' src='https://$cover'>
+                                    <div class='card-body text-left'>
+                                        <h5 class='card-title text-dark font-weight-bold mb-0'>$title</h5>
+                                        <p class='text-muted small'>$writer</p>
+                                        <h5 class='font-weight-bold' style='color:var(--green);'>฿$price</h5>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            ";
             }
             ?>
 
@@ -191,48 +197,14 @@
             if ($getCate == 'default') {
                 foreach ($result as $category) {
                     foreach ($category as $book) {
-                        echo "
-                <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
-                    <a href='#' style='text-decoration: none;'>
-                    <div class='card border-0'>
-                        <img class='card-img-top bg-grey' src='$book->cover'>
-                        <div class='card-body text-left'>
-                            <h5 class='card-title text-dark font-weight-bold mb-0'>$book->title</h5>
-                            <p class='text-muted small'>$book->writer</p>
-                            <h5 class='font-weight-bold' style='color:var(--green);'>฿$book->price</h5>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                ";
+                        printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description);
                     }
                 }
             } else {
-                // <a href='#' onclick='setBook($book->id, $book->cover, $book->title, $book->writer, $book->price, $book->description);' style='text-decoration: none;'>
                 foreach ($result as $category) {
                     foreach ($category as $book) {
                         if ($book->cate2 == $getCate || $getCate == "default") {
-                            echo "
-                            <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";?>
-
-            <a href='bookDetail.html'
-                onclick="setBook(<?php echo $book->id?>, <?php echo '\''.$book->cover.'\'';?>, <?php echo '\''.$book->title.'\'';?>, <?php echo '\''.$book->writer.'\'';?>, <?php echo $book->price?>, <?php echo '\''.$book->description.'\'';?>)"
-                style='text-decoration: none;'>
-
-
-                <?php
-                            echo "
-                                <div class='card border-0'>
-                                    <img class='card-img-top bg-grey' src='https://$book->cover'>
-                                    <div class='card-body text-left'>
-                                        <h5 class='card-title text-dark font-weight-bold mb-0'>$book->title</h5>
-                                        <p class='text-muted small'>$book->writer</p>
-                                        <h5 class='font-weight-bold' style='color:var(--green);'>฿$book->price</h5>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                            ";
+                            printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description);
                         }
                     }
                 }

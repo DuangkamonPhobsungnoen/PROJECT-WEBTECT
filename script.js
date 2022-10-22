@@ -29,10 +29,10 @@ function bookDetail(){
     let show = document.getElementById("bookDetail");
     let text = "<div class='col-lg-6 col-sm-12 align-self-center'><img src='https://"+cover+"' class='img-fluid'></div>";
     text += "<div class='col-lg-6 col-sm-12 align-self-center py-5 pr-3'>";
-    text += "<div class='h3 font-weight-bold mb-0'>"+title+"</div>";
+    text += "<div class='h4 font-weight-bold mb-0'>"+title+"</div>";
     text += "<div class='text-muted'>"+writer+"</div>";
-    text += "<div class='h3 font-weight-bold my-4' style='color:var(--green);'>฿"+price+"</div>";
-    text += "<div class='detail'>"+des+"</div>";
+    text += "<div class='h5 font-weight-bold mt-5' style='color:var(--green);'>฿"+price+"</div>";
+    text += "<div class='detail mt-5'>"+des+"</div>";
     text += "<button class='btn-cart small mt-4 px-5 py-2' onclick='#'>ADD TO CART</button>";
     text += "</div></div>";
 
