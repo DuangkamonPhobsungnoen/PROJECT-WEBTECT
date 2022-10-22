@@ -26,7 +26,7 @@
         if ($ans%3 == 0 && $ans < 10) {
             echo "<div class='col-lg-4 col-md-6 col-sm-12 mb-4'>";
             echo "<div class='card'>";
-            echo "<img class='card-img-top'  width='100%' height='130' src='$article->cover' alt='Card image cap'>";
+            echo "<img class='card-img-top'  width='100%' src='$article->cover' alt='Card image cap'>";
             echo "<div class='card-body'>";
             echo "<p class='card-text'> <h5><b>$article->name</h5> </p>";
             echo "</div></div></div>";
