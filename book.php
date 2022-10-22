@@ -67,34 +67,33 @@
         </div>
 </form>
     <div class='container my-5'>
-    <div class="row">
-        <?php
-            $url = "book.json";
-            $response = file_get_contents($url);
-            $result = json_decode($response);
-            $getCate = 'default';
+        <div class="row">
+            <?php
+                $url = "book.json";
+                $response = file_get_contents($url);
+                $result = json_decode($response);
+                $getCate = 'default';
 
-            if (isset($_POST['cate1'])) {
-                $getCate = $_POST['cate1'];
-            } else if (isset($_POST['cate2'])) {
-                $getCate = $_POST['cate2'];
-            } else if (isset($_POST['cate3'])) {
-                $getCate = $_POST['cate3'];
-            } else if (isset($_POST['cate4'])) {
-                $getCate = $_POST['cate4'];
-            } else if (isset($_POST['cate5'])) {
-                $getCate = $_POST['cate5'];
-            } else if (isset($_POST['cate6'])) {
-                $getCate = $_POST['cate6'];
-            } else if (isset($_POST['cate7'])) {
-                $getCate = $_POST['cate7'];
-            } else if (isset($_POST['cate8'])) {
-                $getCate = $_POST['cate8'];
-            }
-            ?>
-        <br>
-        <div class='container my-5'>
-            <div class="row">
+                if (isset($_POST['cate1'])) {
+                    $getCate = $_POST['cate1'];
+                } else if (isset($_POST['cate2'])) {
+                    $getCate = $_POST['cate2'];
+                } else if (isset($_POST['cate3'])) {
+                    $getCate = $_POST['cate3'];
+                } else if (isset($_POST['cate4'])) {
+                    $getCate = $_POST['cate4'];
+                } else if (isset($_POST['cate5'])) {
+                    $getCate = $_POST['cate5'];
+                } else if (isset($_POST['cate6'])) {
+                    $getCate = $_POST['cate6'];
+                } else if (isset($_POST['cate7'])) {
+                    $getCate = $_POST['cate7'];
+                } else if (isset($_POST['cate8'])) {
+                    $getCate = $_POST['cate8'];
+                }
+                ?>
+        </div>
+        <div class="row">
                 <?php
                 // showbook
                 if ($getCate == 'default') {
@@ -102,17 +101,17 @@
                         foreach ($category as $book) {
                             echo "
                             <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
-                                    <a href='#' style='text-decoration: none'>
-                                        <div class='card border-0'>
-                                            <img class='card-img-top bg-grey' src='$book->cover'>
-                                            <div class='card-body text-left'>
-                                                <h5 class='card-title text-dark font-weight-bold mb-0'>$book->title</h5>
-                                                <p class='text-muted small'>$book->writer</p>
-                                                <h5 class='font-weight-bold' style='color:var(--green);'>฿$book->price</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>";
+                                <a href='#' style='text-decoration: none'>
+                                <div class='card border-0'>
+                                    <img class='card-img-top bg-grey' src='$book->cover'>
+                                    <div class='card-body text-left'>
+                                        <h5 class='card-title text-dark font-weight-bold mb-0'>$book->title</h5>
+                                        <p class='text-muted small'>$book->writer</p>
+                                        <h5 class='font-weight-bold' style='color:var(--green);'>฿$book->price</h5>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>";
                         }
                     }
                 } else {
@@ -121,7 +120,7 @@
                             if ($book->cate2 == $getCate || $getCate == "default") {
                                 echo "
                                     <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
-                                    <a href='#' style='text-decoration: none'>
+                                        <a href='#' style='text-decoration: none'>
                                         <div class='card border-0'>
                                             <img class='card-img-top bg-grey' src='$book->cover'>
                                             <div class='card-body text-left'>
@@ -130,8 +129,8 @@
                                                 <h5 class='font-weight-bold' style='color:var(--green);'>฿$book->price</h5>
                                             </div>
                                         </div>
-                                    </a>
-                                </div>";
+                                        </a>
+                                    </div>";
                             }
                         }
                     }
@@ -139,6 +138,7 @@
                 ?>
             </div>
         </div>
+
         <?php include("footer.php"); ?>
 </body>
 </html>
