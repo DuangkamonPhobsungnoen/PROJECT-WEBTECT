@@ -30,8 +30,9 @@
             echo "<div class='col-md-8'>";
             echo "<h4 class='card-title mt-2'>$article->name</h4>";
             echo "<p class='max-lines'>$article->description</p>";
-            echo "<button class='btn btn-info'>View all</button>";
+            echo "<button data-toggle='modal' data-target= '#".$article->id."' class='btn btn-info'>View all</button>";
             echo "</div></div></div>";
+            
         }
         else {
             echo "<div class='card mt-4 p-4'>";
@@ -39,12 +40,14 @@
             echo "<div class='col-md-8'>";
             echo "<h4 class='card-title mt-2'>$article->name</h4>";
             echo "<p class='max-lines'>$article->description</p>";
-            echo "<button class='btn btn-info'>View all</button>";
+            echo "<button data-toggle='modal' data-target= '#".$article->id."' class='btn btn-info'>View all</button>";
             echo "</div>";
             echo "<div class='col-md-4'>";
             echo "<img class='img-fluid' src='$article->cover'>";
             echo "</div></div></div>";
+
         }
+        
     }
     echo "</div><br>";
     ?>
