@@ -46,7 +46,6 @@ ul.navbar-nav a:active {
     overflow: hidden;
 }
 
-<<<<<<< Updated upstream
 /* book */
 /* .p{ text-align: center;} */
 .btn{
@@ -58,7 +57,7 @@ ul.navbar-nav a:active {
     padding: 0px;
     font-size:15px;
     border-radius: 7px;
-    margin-right: 20px;
+    margin-right: 3%;
     }
 .b1{
     background-color: #CC80C4;
@@ -83,9 +82,8 @@ ul.navbar-nav a:active {
 }
 .b8{
     background-color: #E09149;
-=======
+}
 .card-img-top {
     width: 100%;
     object-fit: cover;
->>>>>>> Stashed changes
 }
