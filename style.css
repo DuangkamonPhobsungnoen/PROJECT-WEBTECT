@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
 * {
-    font-family: 'Kanit', sans-serif;
     --green: #31ad99;
     --price: #fc5e03;
 }
 
 body {
+    font-family: 'Kanit', sans-serif;
     width: 100%;
     overflow-x: hidden;
 }
@@ -81,4 +82,20 @@ ul.navbar-nav a:active {
 }
 .b8{
     background-color: #E09149;
+}
+
+.frame{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.detail{
+    font-family: 'Sarabun', sans-serif;
+}
+
+.btn-cart{
+    background-color: var(--green);
+    color: white;
+    border-radius: 16px;
+    border: 0;
 }

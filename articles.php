@@ -22,7 +22,7 @@
     
     foreach ($result2 as $article) {
         if ($article->id%2 != 0){
-            echo "<div class='card mt-4 p-4'>";
+            echo "<div class='card mt-5 p-4 border-0 frame'>";
             echo "<div class='row'>";
             echo "<div class='col-md-4'>";
             echo "<img class='img-fluid' src='$article->cover'>";
@@ -35,7 +35,7 @@
             
         }
         else {
-            echo "<div class='card mt-4 p-4'>";
+            echo "<div class='card mt-5 p-4 border-0 frame'>";
             echo "<div class='row'>";
             echo "<div class='col-md-8'>";
             echo "<h4 class='card-title mt-2'>$article->name</h4>";

@@ -17,3 +17,14 @@ function showBook(category) {
         }   
 
 }
+
+var cover = "";
+var title = "";
+var writer = "";
+var price = 0;
+var cover = "";
+var id = 0;
+
+function bookDetail(cover, category, detail, title, price){
+    let show = document.getElementById("bookDetail")
+}
