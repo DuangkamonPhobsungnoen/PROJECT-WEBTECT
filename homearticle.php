@@ -32,7 +32,9 @@
             echo "</div></div></div>";
         }
     }
-    echo "</div></div>";
+    echo "</div>";
+    echo "<a class='btn btn-success float-right' href='articles.php'>View all</a>";
+    echo "</div>";
     ?>
 </body>
 
