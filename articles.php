@@ -59,125 +59,17 @@
     echo "<div class='container'>";
     
     foreach ($result2 as $article) {
-        if ($article->id == 1){
-            echo "<div class='modal fade' id='1'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 2){
-            echo "<div class='modal fade' id='2'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 3){
-            echo "<div class='modal fade' id='3'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 4){
-            echo "<div class='modal fade' id='4'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 5){
-            echo "<div class='modal fade' id='5'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 6){
-            echo "<div class='modal fade' id='6'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 7){
-            echo "<div class='modal fade' id='7'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 8){
-            echo "<div class='modal fade' id='8'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 9){
-            echo "<div class='modal fade' id='9'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 10){
-            echo "<div class='modal fade' id='10'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 11){
-            echo "<div class='modal fade' id='11'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
-        }
-        else if ($article->id == 12){
-            echo "<div class='modal fade' id='12'>";
-            echo "<div class='modal-dialog modal-lg'>";
-            echo "<div class='modal-content'>";
-            echo "<img src='$article->cover'>";
-            echo "<div class='modal-body'>";
-            echo "<h2>$article->name</h2>";
-            echo "<p>$article->description</p></div>";
-            echo "</div></div></div>";
+        for ($i = 1; $i <= 12; $i++){
+            if ($article->id == $i){
+                echo "<div class='modal fade' id='".$i."'>";
+                echo "<div class='modal-dialog modal-lg'>";
+                echo "<div class='modal-content'>";
+                echo "<img src='$article->cover'>";
+                echo "<div class='modal-body'>";
+                echo "<h2>$article->name</h2>";
+                echo "<p>$article->description</p></div>";
+                echo "</div></div></div>";
+            }
         }
         echo "</div>";
     }
