@@ -433,9 +433,9 @@
             "description": "PLARIEX พาระลึกอดีตไปสมัยที่ยังเป็นเด็กหญิงชั้นมัธยมยุค 90s เรามีอะไรอยู่ในกระเป๋า ข้อความในเพจเจอร์พิมพ์ว่าอะไร ถ่ายรูปคู่ใครในสมุดสติ๊กเกอร์ รู้สึกยังไงเมื่อกำลังจะได้ใส่ชุดนักเรียน ม.ปลาย และเกิดอะไรขึ้นในวันสุดท้ายของการเรียน"
         }
     ],
-    "non-fiction": [{
+    "nonfiction": [{
             "id": 81,
-            "cate2": "non-fiction",
+            "cate2": "nonfiction",
             "cover": "salmonbooks.net/wp-content/uploads/2021/04/04_WORLD-WAR-TOOLS-04-1000x1000.jpg",
             "title": "WORLD WAR TOOLS สงครามโลกในสิ่งของ",
             "writer": "มนสิชา รุ่งชวาลนนท์",
@@ -444,7 +444,7 @@
         },
         {
             "id": 82,
-            "cate2": "non-fiction",
+            "cate2": "nonfiction",
             "cover": "salmonbooks.net/wp-content/uploads/2020/03/200312_MNM_EMO-04-1000x1000.png",
             "title": "THE EMOTIONAL MAN มนุษย์อารมณ์",
             "writer": "ณัฐวุฒิ เผ่าทวี",
@@ -453,7 +453,7 @@
         },
         {
             "id": 83,
-            "cate2": "non-fiction",
+            "cate2": "nonfiction",
             "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412839006.png",
             "title": "สูตรสุคติ",
             "writer": "ณัฐพงศ์ ไชยวานิชย์ผล (แปล) / Bunpei Yorifuji (เขียน)",
@@ -462,7 +462,7 @@
         },
         {
             "id": 84,
-            "cate2": "non-fiction",
+            "cate2": "nonfiction",
             "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1412671242.png",
             "title": "เครื่องปรุงจักรวาล",
             "writer": "MISTER TOMPKIN (เขียน) / ทีปกร วุฒิพิทยามงคล (วาด)",
@@ -471,7 +471,7 @@
         },
         {
             "id": 85,
-            "cate2": "non-fiction",
+            "cate2": "nonfiction",
             "cover": "salmonbooks.net/wp-content/uploads/2019/05/c_1413982359.png",
             "title": "OUT/LINE",
             "writer": "Art Jeeno",
@@ -480,7 +480,7 @@
         },
         {
             "id": 86,
-            "cate2": "non-fiction",
+            "cate2": "nonfiction",
             "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1539701274-1000x1000.png",
             "title": "ศิลปะของความผิดหวัง",
             "writer": "กิตติพล สรัคคานนท์",
@@ -489,7 +489,7 @@
         },
         {
             "id": 87,
-            "cate2": "non-fiction",
+            "cate2": "nonfiction",
             "cover": "salmonbooks.net/wp-content/uploads/2019/03/c_1508237092.jpg",
             "title": "THAIS IN WORLD HISTORY ผจญไทยในแดนเทศ",
             "writer": "อาชญาสิทธิ์ ศรีสุวรรณ",

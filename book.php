@@ -119,7 +119,7 @@
                         <p>Memoir</p>
                     </div>
                     <div class="btn-cat m-4">
-                        <button name="cate8" type="submit" class="btn btn-cat-inside b8" value="non-fiction">
+                        <button name="cate8" type="submit" class="btn btn-cat-inside b8" value="nonfiction">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-x-octagon" viewBox="0 0 16 16">
                                 <path
@@ -135,7 +135,6 @@
 
             </div>
         </div>
-
     </form>
     <div class='container my-5'>
         <div class="row">
@@ -166,45 +165,21 @@
         </div>
         <div class="row">
 
-            <?php
-            function printBook($id, $cover, $title, $writer, $price, $description){
-                echo "
-                            <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";?>
-
-                            <a href='bookDetail.php'
-                                onclick="setBook(<?php echo $id.',\''.$cover.'\',\''.$title.'\',\''.$writer.'\','.$price.',\''.$description.'\''?>)"
-                                style='text-decoration: none;'>
-
-                            <?php
-                            echo "
-                                <div class='card border-0'>
-                                    <img class='card-img-top bg-grey' src='https://$cover'>
-                                    <div class='card-body text-left'>
-                                        <h5 class='card-title text-dark font-weight-bold mb-0'>$title</h5>
-                                        <p class='text-muted small'>$writer</p>
-                                        <h5 class='font-weight-bold' style='color:var(--green);'>฿$price</h5>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                            ";
-            }
-            ?>
-
 
             <?php
+            include("function.php"); //เก็บ function printBoook
             // showbook
             if ($getCate == 'default') {
                 foreach ($result as $category) {
                     foreach ($category as $book) {
-                        printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description);
+                        printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description,$book->cate2);
                     }
                 }
             } else {
                 foreach ($result as $category) {
                     foreach ($category as $book) {
                         if ($book->cate2 == $getCate || $getCate == "default") {
-                            printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description);
+                            printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description,$book->cate2);
                         }
                     }
                 }
