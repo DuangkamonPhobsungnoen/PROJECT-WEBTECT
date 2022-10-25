@@ -7,7 +7,9 @@ var price = 0;
 var des = "Default เรื่องย่อ";
 var cat = "Default Category";
 var text3 = "";
+var text4 = "";
 
+//เซ็ตข้อมูลหนังสือหน้า bookDetail
 function setBook(id1, cover1, title1, writer1, price1, des1, cat1){
     localStorage.setItem("id", id1);
     localStorage.setItem("cover", cover1);
@@ -18,6 +20,7 @@ function setBook(id1, cover1, title1, writer1, price1, des1, cat1){
     localStorage.setItem("cat", cat1);
 }
 
+// starter pack of bookDetail
 function startBookDetail(){
     bookDetail();
     showRelate();
@@ -60,53 +63,56 @@ function ExtractData1(data){
     var id = localStorage.getItem("id");
     var cat = localStorage.getItem("cat"); 
     
-    // ต้องใช้ data.ประเภท 8 ครั้ง เพราะใช้ data เฉยๆรันไม่ได้ แง
+    // ต้องใช้ data.ประเภท 8 ครั้ง เพราะใช้ data, data[0] รันไม่ได้ แง
     for (book of data.comic){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
     for (book of data.comicessay){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
     for (book of data.conceptidea){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
     for (book of data.culture){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
     for (book of data.novel){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
     for (book of data.journey){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
     for (book of data.memoir){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
     for (book of data.nonfiction){
         if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer);
+            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
         }
     }
 }
 
-function printRelate(title1, cover1, price1, writer1){
+function printRelate(title1, cover1, price1, writer1, id1, des1, cat1,){
+    // ฟังชั่นบึ่มมมมม
     let show = document.getElementById("showRelate");
     text3 += "<div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";
-    text3 += "<a href='bookDetail.php' onclick='#' style='text-decoration: none;'>";
+    text3 += "<a href='#' onclick='setBook(";
+    // text3 += id1+",'"+cover1+"','" +title1+"','" +writer1+"'," +price1+",'" +des1+"','" +cat1+"'";
+    text3 += ") style='text-decoration: none;'>";
     text3 += "<div class='card border-0'>";
     text3 += "<img class='card-img-top bg-grey' src='https://"+cover1+"'>";
     text3 += "<div class='card-body text-left'>";
@@ -116,3 +122,4 @@ function printRelate(title1, cover1, price1, writer1){
     text3 += "</div></div></a></div>";
     show.innerHTML = text3
 }
+
