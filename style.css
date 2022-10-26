@@ -94,7 +94,7 @@ ul.navbar-nav a:active {
 }
 
 .frame2:hover{
-    box-shadow: 0px 0px 10px 0px #31ad99;
+    box-shadow: 0px 0px 10px 0px var(--green);
 }
 
 .detail{
@@ -116,4 +116,13 @@ ul.navbar-nav a:active {
     .tem {
         grid-template-columns: 1fr;
     }
+}
+
+.textGreen{
+    color: black;
+    transition: color 0.5s ease;
+}
+
+.textGreen:hover{
+    color: var(--green);
 }
