@@ -47,8 +47,6 @@ ul.navbar-nav a:active {
     overflow: hidden;
 }
 
-/* book */
-/* .p{ text-align: center;} */
 .btn-cat{
     text-align: center;
     padding: 0px;
@@ -89,6 +87,16 @@ ul.navbar-nav a:active {
     border-radius: 15px;
 }
 
+.frame2{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.frame2:hover{
+    box-shadow: 0px 0px 10px 0px #31ad99;
+}
+
 .detail{
     font-family: 'Sarabun', sans-serif;
 }
@@ -98,4 +106,14 @@ ul.navbar-nav a:active {
     color: white;
     border-radius: 16px;
     border: 0;
+}
+
+.tem{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+@media screen and (max-width:900px) {
+    .tem {
+        grid-template-columns: 1fr;
+    }
 }

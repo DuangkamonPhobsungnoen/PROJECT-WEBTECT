@@ -19,25 +19,28 @@
     <div class="container">
         <h1>Recommend</h1> <br>
         <div class="row">
-            <div class="col-lg-4 col-md-12 frame p-5">
-                <h3 class="text-center">แนะนำหนังสือ</h3>
+            <div class="col-lg-3 col-md-12 d-flex align-items-stretchs self-items-center">
+                <div class="card frame p-4">
+                    <h3 class="text-center">แนะนำหนังสือ</h3>
                 <h5>หนังสือคือของขวัญที่คุณสามารถเปิดได้ครั้งแล้วครั้งเล่า <br><br><br></h5>
                 <div class="card-link float-right">
                     <a href="book.php">
                         <button class="btn btn-success">View all</button>
                     </a>
                 </div>
+                </div>
+                
 
             </div>
-            <div class="col-lg-2  col-md-6 d-flex align-items-stretch">
-                <div class="card frame p-2">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="card frame p-4">
                     <img src="https://media.discordapp.net/attachments/941545409992605707/1034057738583556137/unknown.png" class="card-img-bottom">
                     <div class="card-body">
                         <h6 class="card-title text-center"><b>ฝ่ากฏรักต่างโลก</b></h6>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2  col-md-6 d-flex align-items-stretch">
+            <div class="col-lg-3  col-md-6 d-flex align-items-stretch">
                 <div class="card frame p-2">
                     <img src="https://media.discordapp.net/attachments/941545409992605707/1034652683207974993/unknown.png" class="card-img-bottom">
                     <div class="card-body">
@@ -45,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2  col-md-6 d-flex align-items-stretch">
+            <div class="col-lg-3  col-md-6 d-flex align-items-stretch">
                 <div class="card frame p-2">
                     <img src="https://media.discordapp.net/attachments/941545409992605707/1034653018303496312/unknown.png" class="card-img-bottom">
                     <div class="card-body">
@@ -53,14 +56,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2  col-md-6 d-flex align-items-stretch">
+            <!-- <div class="col-lg-2  col-md-6 d-flex align-items-stretch">
                 <div class="card frame p-2">
                     <img src="https://media.discordapp.net/attachments/941545409992605707/1034656831760506940/unknown.png" class="card-img-bottom">
                     <div class="card-body">
                         <h6 class="card-title text-center"><b>ยอมแหกกฎฟ้ามิอาจทรยศนาง</b></h6>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
