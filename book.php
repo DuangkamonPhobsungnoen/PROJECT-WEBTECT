@@ -20,7 +20,7 @@
     <title>Book by Sababooks</title>
 </head>
 
-<body>
+<body onload="setActive('nav2');">
     <?php include("navbar.php"); ?>
     <div class="my-5">
         <?php include("poster.php"); ?>

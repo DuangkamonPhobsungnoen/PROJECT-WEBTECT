@@ -12,13 +12,13 @@
 
         <div class="collapse navbar-collapse mb-sm-3 mb-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto nav">
-                <li class="nav-item ml-3 active">
-                    <a class="nav-link" href="index.php">HOME</a>
+                <li id="nav1" class="nav-item ml-3">
+                    <a  class="nav-link" href="index.php">HOME</a>
                 </li>
-                <li class="nav-item ml-3">
+                <li id="nav2" class="nav-item ml-3">
                     <a class="nav-link" href="book.php">BOOK</a>
                 </li>
-                <li class="nav-item ml-3">
+                <li id="nav3" class="nav-item ml-3">
                     <a class="nav-link" href="articles.php">ARTICLES</a>
                 </li>
             </ul>

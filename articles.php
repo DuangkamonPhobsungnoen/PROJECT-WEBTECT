@@ -8,9 +8,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <title>Article</title>
 </head>
-<body>
+<body onload="setActive('nav3');">
     <?php include("navbar.php"); ?>
 
     <?php
@@ -18,7 +19,7 @@
     $response2 = file_get_contents($url2); 
     $result2 = json_decode($response2);
     echo "<div class='container'>";
-    echo "<h1>Articles</h1>";
+    echo "<h1 class='mt-5'>Articles</h1>";
     
     foreach ($result2 as $article) {
         if ($article->id%2 != 0){

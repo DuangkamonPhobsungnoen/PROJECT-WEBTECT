@@ -23,6 +23,7 @@ function setBook(id1, cover1, title1, writer1, price1, des1, cat1){
 function startBookDetail(){
     bookDetail();
     showRelate();
+    setActive("nav2");
 }
 
 // ตัว card หลัก
@@ -215,3 +216,7 @@ function ExtractData2(data, id){
     }
 }
 
+// set active nav สีเขียวให้ตรงหน้า
+function setActive(i) {
+    $('#'+i).addClass("active");
+}
