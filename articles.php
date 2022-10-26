@@ -22,7 +22,8 @@
     
     foreach ($result2 as $article) {
         if ($article->id%2 != 0){
-            echo "<div class='card mt-5 p-4 border-0 frame'>";
+            echo "<a data-toggle='modal' data-target= '#".$article->id."'>";
+            echo "<div class='card mt-5 p-4 border-0 frame2'>";
             echo "<div class='row'>";
             echo "<div class='col-md-4'>";
             echo "<img class='img-fluid' src='$article->cover'>";
@@ -30,21 +31,20 @@
             echo "<div class='col-md-8'>";
             echo "<h4 class='card-title mt-2'>$article->name</h4>";
             echo "<p class='max-lines'>$article->description</p>";
-            echo "<button data-toggle='modal' data-target= '#".$article->id."' class='btn btn-info'>View all</button>";
-            echo "</div></div></div>";
+            echo "</div></div></div></a>";
             
         }
         else {
-            echo "<div class='card mt-5 p-4 border-0 frame'>";
+            echo "<a data-toggle='modal' data-target= '#".$article->id."'>";
+            echo "<div class='card mt-5 p-4 border-0 frame2'>";
             echo "<div class='row'>";
             echo "<div class='col-md-8'>";
             echo "<h4 class='card-title mt-2'>$article->name</h4>";
             echo "<p class='max-lines'>$article->description</p>";
-            echo "<button data-toggle='modal' data-target= '#".$article->id."' class='btn btn-info'>View all</button>";
             echo "</div>";
             echo "<div class='col-md-4'>";
             echo "<img class='img-fluid' src='$article->cover'>";
-            echo "</div></div></div>";
+            echo "</div></div></div></a>";
 
         }
         
