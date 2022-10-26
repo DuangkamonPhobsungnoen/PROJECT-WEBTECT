@@ -16,7 +16,7 @@
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Book by Sababooks</title>
 </head>
 
@@ -163,12 +163,10 @@
             }
             ?>
         </div>
-        <div class="row" id="myBook">
-
-
+        <div class="row">
             <?php
             include("function.php"); //เก็บ function printBoook
-            // showbook
+            // ใช้ function script ไม่ได้เพราะไม่ใช่ onclick
             if ($getCate == 'default') {
                 foreach ($result as $category) {
                     foreach ($category as $book) {
