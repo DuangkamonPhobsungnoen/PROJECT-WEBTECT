@@ -25,15 +25,16 @@
         $ans = $article->id;
         if ($ans%3 == 0 && $ans < 10) {
             echo "<div class='col-lg-4 col-md-6 col-sm-12 mb-4'>";
+            echo "<a href='articles.php'>";
+            
             echo "<div class='card'>";
             echo "<img class='card-img-top'  width='100%' src='$article->cover' alt='Card image cap'>";
             echo "<div class='card-body'>";
             echo "<p class='card-text'> <h5><b>$article->name</h5> </p>";
-            echo "</div></div></div>";
+            echo "</div></div></a></div>";
         }
     }
     echo "</div>";
-    echo "<a class='btn btn-success float-right' href='articles.php'>View all</a>";
     echo "</div>";
     ?>
 </body>
