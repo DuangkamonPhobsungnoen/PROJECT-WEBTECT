@@ -7,6 +7,7 @@ var price = 0;
 var des = "Default เรื่องย่อ";
 var cat = "Default Category";
 var text2 = "";
+var allCat = ["comic", "comicessay", "conceptidea", "culture", "novel", "journey", "memoir", "nonfiction"]; //ไว้ช่วยรันลูปไล่หนังสือ
 
 //เซ็ตข้อมูลหนังสือหน้า bookDetail
 function setBook(id1, cover1, title1, writer1, price1, des1, cat1){
@@ -62,82 +63,21 @@ function showRelate(){
     request.send();
 }
 
+// ไล่ข้อมูลของ showRealte
 function ExtractData1(data){
     var id = localStorage.getItem("id");
     var cat = localStorage.getItem("cat"); 
     let b = 0; // ปริ้นแค่ 4 เล่ม
-    
-    // ต้องใช้ data.ประเภท 8 ครั้ง เพราะใช้ data, data[0] รันไม่ได้ แง
-    for (book of data.comic){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
-            }
 
-        }
-    }
-    for (book of data.comicessay){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
-            }
-        }
-    }
-    for (book of data.conceptidea){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
-            }
-        }
-    }
-    for (book of data.culture){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
-            }
-        }
-    }
-    for (book of data.novel){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
-            }
-        }
-    }
-    for (book of data.journey){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
-            }
-        }
-    }
-    for (book of data.memoir){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
-            }
-        }
-    }
-    for (book of data.nonfiction){
-        if((book.cate2 == cat)&&(book.id != id)){
-            printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
-            b++;
-            if(b==4){
-                break;
+    for (let i = 0; i < 8; i++) {
+        for (book of data[allCat[i]]){
+            if((book.cate2 == cat)&&(book.id != id)){
+                printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
+                b++;
+                if(b==4){
+                    break;
+                }
+    
             }
         }
     }
@@ -172,46 +112,13 @@ function setBookByID(id){
     request.send();
 }
 
+// ไล่ข้อมูลให้ setBook
 function ExtractData2(data, id){
-    for (book of data.comic){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
-        }
-            
-    }
-    for (book of data.comicessay){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
-        }
-    }
-    for (book of data.conceptidea){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
-        }
-    }
-    for (book of data.culture){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
-        }
-    }
-    for (book of data.novel){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
-        }
-    }
-    for (book of data.journey){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
-        }
-    }
-    for (book of data.memoir){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
-        }
-    }
-    for (book of data.nonfiction){
-        if(book.id == id){
-            setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
+    for (let i = 0; i < 8; i++) {
+        for (book of data[allCat[i]]){
+            if(book.id == id){
+                setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
+            }
         }
     }
 }
