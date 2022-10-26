@@ -165,19 +165,33 @@
         </div>
         <div class="row">
             <?php
-            include("function.php"); //เก็บ function printBoook
-            // ใช้ function script ไม่ได้เพราะไม่ใช่ onclick
+            function printBook($id, $cover, $title, $writer, $price){
+                echo "
+                        <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
+                            <a href='bookDetail.php' onclick='setBookByID($id)' style='text-decoration: none;'>
+                                <div class='card border-0'>
+                                    <img class='card-img-top bg-grey' src='https://$cover'>
+                                    <div class='card-body text-left'>
+                                        <h5 class='card-title text-dark font-weight-bold mb-0'>$title</h5>
+                                        <p class='text-muted small'>$writer</p>
+                                        <h5 class='font-weight-bold' style='color:var(--green);'>฿$price</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>";
+            }
+
             if ($getCate == 'default') {
                 foreach ($result as $category) {
                     foreach ($category as $book) {
-                        printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description,$book->cate2);
+                        printBook($book->id,$book->cover,$book->title,$book->writer,$book->price);
                     }
                 }
             } else {
                 foreach ($result as $category) {
                     foreach ($category as $book) {
                         if ($book->cate2 == $getCate || $getCate == "default") {
-                            printBook($book->id,$book->cover,$book->title,$book->writer,$book->price,$book->description,$book->cate2);
+                            printBook($book->id,$book->cover,$book->title,$book->writer,$book->price);
                         }
                     }
                 }

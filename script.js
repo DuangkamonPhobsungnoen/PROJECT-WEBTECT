@@ -157,7 +157,7 @@ function printRelate(title1, cover1, price1, writer1, id1, des1, cat1,){
     show.innerHTML = text2
 }
 
-// ส่งตัวแปรทั้งหมดไม่ได้เลยส่งแค่id
+// ส่งตัวแปรทั้งหมดลำบากเลยส่งแค่id
 function setBookByID(id){
     let requestURL = 'book.json';
     let request = new XMLHttpRequest();
