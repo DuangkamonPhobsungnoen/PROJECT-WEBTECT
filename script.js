@@ -71,8 +71,7 @@ function ExtractData1(data){
 
     for (let i = 0; i < 8; i++) {
         for (book of data[allCat[i]]){
-            if((book.cate2 == cat)&&(book.id != id)){
-
+            if((book.cate2 == cat)&&(book.id != id)&&(book.id%2 != id%2)){
                 let show = document.getElementById("showRelate");
                 text2 += "<div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";
                 text2 += "<a href='bookDetail.php' onclick='setBookByID("+book.id+")' style='text-decoration: none;'>";
