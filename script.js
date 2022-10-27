@@ -49,7 +49,7 @@ function bookDetail(){
     show.innerHTML = text;
 }
 
-// ดึง json มาใส่ Related 
+// ดึง json มาใส่ Relate 
 function showRelate(){
     let requestURL = 'book.json';
     let request = new XMLHttpRequest();
@@ -63,7 +63,7 @@ function showRelate(){
     request.send();
 }
 
-// ไล่ข้อมูลของ showRealte
+// ส่งข้อมูล showRealte
 function ExtractData1(data){
     var id = localStorage.getItem("id");
     var cat = localStorage.getItem("cat"); 
@@ -72,7 +72,19 @@ function ExtractData1(data){
     for (let i = 0; i < 8; i++) {
         for (book of data[allCat[i]]){
             if((book.cate2 == cat)&&(book.id != id)){
-                printRelate(book.title, book.cover, book.price, book.writer, book.id, book.description, book.cate2);
+
+                let show = document.getElementById("showRelate");
+                text2 += "<div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";
+                text2 += "<a href='bookDetail.php' onclick='setBookByID("+book.id+")' style='text-decoration: none;'>";
+                text2 += "<div class='card border-0'>";
+                text2 += "<img class='card-img-top bg-grey' src='https://"+book.cover+"'>";
+                text2 += "<div class='card-body text-left'>";
+                text2 += "<h5 class='card-title text-dark font-weight-bold mb-0'>"+book.title+"</h5>";
+                text2 += "<p class='text-muted small'>"+book.writer+"</p>";
+                text2 += "<h5 class='font-weight-bold' style='color:var(--green);'>฿"+book.price+"</h5> ";
+                text2 += "</div></div></a></div>";
+                show.innerHTML = text2;
+
                 b++;
                 if(b==4){
                     break;
@@ -81,21 +93,6 @@ function ExtractData1(data){
             }
         }
     }
-}
-
-// ไว้ปริ้นหนังสือที่ตรงเกณฑ์ข้างบน
-function printRelate(title1, cover1, price1, writer1, id1, des1, cat1,){
-    let show = document.getElementById("showRelate");
-    text2 += "<div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";
-    text2 += "<a href='bookDetail.php' onclick='setBookByID("+id1+")' style='text-decoration: none;'>";
-    text2 += "<div class='card border-0'>";
-    text2 += "<img class='card-img-top bg-grey' src='https://"+cover1+"'>";
-    text2 += "<div class='card-body text-left'>";
-    text2 += "<h5 class='card-title text-dark font-weight-bold mb-0'>"+title1+"</h5>";
-    text2 += "<p class='text-muted small'>"+writer1+"</p>";
-    text2 += "<h5 class='font-weight-bold' style='color:var(--green);'>฿"+price1+"</h5> ";
-    text2 += "</div></div></a></div>";
-    show.innerHTML = text2
 }
 
 // ส่งตัวแปรทั้งหมดลำบากเลยส่งแค่id
