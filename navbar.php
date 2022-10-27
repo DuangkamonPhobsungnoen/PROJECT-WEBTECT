@@ -2,7 +2,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white border border-grey sticky-top">
     <div class="container">
         <!-- ใส่ logo -->
-        <img src="fish.svg" width="80px" alt="" class="mr-3">
+        <a href="index.php">
+            <img src="fish.svg" width="80px" alt="" class="mr-3">
+        </a>
+        
 
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
