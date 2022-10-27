@@ -169,7 +169,7 @@
                 echo "
                         <div class='col-lg-3 col-md-4 col-sm-6 mb-5'>
                             <a href='bookDetail.php' onclick='setBookByID($id)' style='text-decoration: none;'>
-                                <div class='card border-0'>
+                                <div class='card border-0 bookHov'>
                                     <img class='card-img-top bg-grey' src='https://$cover'>
                                     <div class='card-body text-left'>
                                         <h5 class='card-title text-dark font-weight-bold mb-0'>$title</h5>

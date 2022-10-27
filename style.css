@@ -47,6 +47,12 @@ ul.navbar-nav a:active {
     overflow: hidden;
 }
 
+a{
+    text-decoration: none;;
+}
+
+/* ปุ่ม category */
+
 .btn-cat{
     text-align: center;
     padding: 0px;
@@ -82,25 +88,43 @@ ul.navbar-nav a:active {
     background-color: #E09149;
 }
 
+/* ปุ่ม get some book ตรง home -> reccommend */
+.b9{
+    letter-spacing: 0.1em;
+    color: var(--green);
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+
+.b9:hover{
+    transform: scale(1.1);
+}
+
 .frame{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 
+/* hover หน้า article */
 .frame2{
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+    transition: all .2s ease-in-out;
 }
 
 .frame2:hover{
     box-shadow: 0px 0px 10px 0px var(--green);
+    transform: scale(1.05);
 }
+
+/* ไว้ใช้ฟ้อน sarabun */
 
 .detail{
     font-family: 'Sarabun', sans-serif;
 }
 
+/* ปุ่ม add to cart ใน book detail */
 .btn-cart{
     background-color: var(--green);
     color: white;
@@ -108,15 +132,7 @@ ul.navbar-nav a:active {
     border: 0;
 }
 
-.tem{
-    display: grid;
-    grid-template-columns: 4fr 6fr;
-}
-@media screen and (max-width:900px) {
-    .tem {
-        grid-template-columns: 1fr;
-    }
-}
+/* hover ส่วน article หน้า home */
 
 .textGreen{
     color: black;
@@ -125,4 +141,53 @@ ul.navbar-nav a:active {
 
 .textGreen:hover{
     color: var(--green);
+}
+
+/* hover ส่วน reccomend */
+
+.rec1{
+    background-color: var(--green);
+    color: white;
+}
+.rec2{
+    background-color: #98c9a3;
+    transition: all .2s ease-in-out;
+}
+.rec3{
+    background-color: #dde7c7;
+    transition: all .2s ease-in-out;
+}
+.rec4{
+    background-color: #edeec9;
+    transition: all .2s ease-in-out;
+}
+
+.rec2:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+.rec3:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+.rec4:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* hover หน้า book */
+.bookHov{
+    transition: all .2s ease-in-out;
+}
+.bookHov:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* เปลี่ยนสีลูกศร slideBook */
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators{
+    filter: invert(100%);
+    width: 5%;
 }

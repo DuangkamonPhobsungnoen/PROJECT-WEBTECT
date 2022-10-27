@@ -37,7 +37,7 @@ function bookDetail(){
     var des = localStorage.getItem("des"); 
 
     let show = document.getElementById("bookDetail");
-    let text = "<div class='col-lg-6 col-sm-12 align-self-center'><img src='https://"+cover+"' class='img-fluid'></div>";
+    let text = "<div class='col-lg-6 col-sm-12 align-self-center'><img src='https://"+cover+"' class='img-fluid mx-auto d-block'></div>";
     text += "<div class='col-lg-6 col-sm-12 align-self-center py-5 pr-3'>";
     text += "<div class='h4 font-weight-bold mb-0'>"+title+"</div>";
     text += "<div class='text-muted'>"+writer+"</div>";
