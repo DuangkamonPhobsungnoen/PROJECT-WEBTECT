@@ -32,6 +32,9 @@
                                         <div class='entry-content'>
                                             <p class='max-lines'>$book->description</p>
                                         </div>
+                                        <div class='text-right'>
+                                            <a href='bookDetail.php'><button class='btn btn-close' onclick='setBookByID($book->id)'>BUY NOW</button></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
