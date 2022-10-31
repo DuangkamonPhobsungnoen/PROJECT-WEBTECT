@@ -25,7 +25,7 @@
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-6 py-2">
-            <a href='bookDetail.php' onclick='setBookByID(602)' style='text-decoration: none;'>
+            <a href='bookDetail.php' onclick='setBookByID(92)' style='text-decoration: none;'>
                 <div class="card h-100 rec3">
                     <div class="card-body pb-0">
                         <img src="https://inwfile.com/s-n/prou2h.jpg" class="card-img-top">
@@ -36,7 +36,7 @@
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-6 py-2">
-            <a href='bookDetail.php' onclick='setBookByID(601)' style='text-decoration: none;'>
+            <a href='bookDetail.php' onclick='setBookByID(91)' style='text-decoration: none;'>
                 <div class="card h-100 rec4">
                     <div class="card-body pb-0">
                         <img src="https://media.discordapp.net/attachments/941545409992605707/1034653018303496312/unknown.png" class="card-img-top">
