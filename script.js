@@ -8,6 +8,7 @@ var des = "Default เรื่องย่อ";
 var cat = "Default Category";
 var text2 = "";
 var allCat = ["comic", "comicessay", "conceptidea", "culture", "novel", "journey", "memoir", "nonfiction"]; //ไว้ช่วยรันลูปไล่หนังสือ
+var cart = [[11,1],[12,1]];
 
 //เซ็ตข้อมูลหนังสือหน้า bookDetail
 function setBook(id1, cover1, title1, writer1, price1, des1, cat1){
