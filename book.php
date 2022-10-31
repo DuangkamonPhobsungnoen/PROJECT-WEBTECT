@@ -17,7 +17,7 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title>Book by Sababooks</title>
+    <title>Sababooks</title>
 </head>
 
 <body onload="setActive('nav2');">
@@ -188,9 +188,10 @@
                     }
                 }
             } else {
+                echo "<div class='h2 text-center col-12 mb-5 text-uppercase' style='letter-spacing:0.1em; color:var(--green);'>$getCate</div>";
                 foreach ($result as $category) {
                     foreach ($category as $book) {
-                        if ($book->cate2 == $getCate || $getCate == "default") {
+                        if ($book->cate2 == $getCate) {
                             printBook($book->id,$book->cover,$book->title,$book->writer,$book->price);
                         }
                     }

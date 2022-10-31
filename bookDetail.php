@@ -17,7 +17,7 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title>Book by Sababooks</title>
+    <title>Sababooks</title>
 </head>
 
 <body onload="startBookDetail();">
