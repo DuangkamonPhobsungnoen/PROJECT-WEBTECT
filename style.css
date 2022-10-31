@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
 * {
     --green: #31ad99;
-    --price: #fc5e03;
+    --red: #c42c21;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
 footer {
     line-height: 2em;
     font-size: 14px;
+    width: 100%;
 }
 
 ul.navbar-nav a:hover {
@@ -130,6 +131,11 @@ a{
     color: white;
     border-radius: 16px;
     border: 0;
+    cursor: pointer;
+}
+
+.btn-cart:hover{
+    background-color: var(--red);
 }
 
 /* hover ส่วน article หน้า home */
@@ -195,4 +201,18 @@ a{
 .btn-close{
     background-color: var(--green);
     color: white;
+    transition: all .3s ease-in-out;
+}
+.btn-close:hover{
+    background-color: var(--red);
+}
+
+.con{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.btn-item:hover{
+    fill: var(--red);
 }

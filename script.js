@@ -8,7 +8,6 @@ var des = "Default เรื่องย่อ";
 var cat = "Default Category";
 var text2 = "";
 var allCat = ["comic", "comicessay", "conceptidea", "culture", "novel", "journey", "memoir", "nonfiction"]; //ไว้ช่วยรันลูปไล่หนังสือ
-var cart = [[11,1],[12,1]];
 
 //เซ็ตข้อมูลหนังสือหน้า bookDetail
 function setBook(id1, cover1, title1, writer1, price1, des1, cat1){
@@ -137,9 +136,23 @@ function setActive(i) {
 var cart = [];
 function addToCart(id) {
     var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
-    console.log(setCart);
-    setCart[id] = 1; //กำหนดให้ id นั้นมี 1 เล่ม
+    if(setCart[id]==null)
+        setCart[id] = 1; //กำหนดให้ id นั้นมี 1 เล่ม
+    else
+        setCart[id] += 1;
+    if(window.location.pathname == "/cart.php")
+        myCart();
     localStorage.setItem("cart", JSON.stringify(setCart));
+}
+
+function deleteFromCart(id) {
+    var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
+    if(setCart[id]==1)
+        setCart[id] = null; //กำหนดให้ id นั้นมี 1 เล่ม
+    else
+        setCart[id] -= 1;
+    localStorage.setItem("cart", JSON.stringify(setCart));
+    myCart();
 }
 
 // ไว้ปริ้นหน้า cart
@@ -159,13 +172,17 @@ function myCart() {
 
 function ExtractData3(data){
     var inCart = JSON.parse(localStorage.getItem("cart") || '[]');
-    let show = document.getElementById("cartPage");
     let text = "";
+    let item = 0;
+    let total = 0;
     for (let i = 0; i < inCart.length; i++) { 
         if(inCart[i] != null){
             for (let j = 0; j < 8; j++) {
                 for (book of data[allCat[j]]){
                     if(book.id == i){
+                        item += inCart[i];
+                        let price = book.price*inCart[i];
+                        total += price;
                         //ดูโค้ดสวยๆใน cartDemo.html
                         text += "<div class='row frame py-3 my-4'>";
                             text += "<div class='col-2 d-flex align-items-center'>";
@@ -175,17 +192,26 @@ function ExtractData3(data){
                                 text += "<div class='h5 text-muted'>"+book.writer+"</div></div></div>";
 
                             text += "<div class='col-2 d-flex align-items-center justify-content-center my-sm-3'>";
-                                text += "<button type='button' class='btn bg-white'>";
-                                text += "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#31ad99' class='bi bi-dash-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z'/></svg>";
+                                text += "<button type='button' class='btn bg-white' onclick='deleteFromCart("+book.id+")'>";
+                                text += "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#31ad99' class='bi bi-dash-circle-fill btn-item' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z'/></svg>";
                                 text += "</button><div class='mx-3'>"+ inCart[i] +"</div>";
-                                text += "<button type='button' class='btn bg-white'>";
-                                text += "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#31ad99' class='bi bi-plus-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z'/></svg></button></div>";
+                                text += "<button type='button' class='btn bg-white' onclick='addToCart("+book.id+")'>";
+                                text += "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#31ad99' class='bi bi-plus-circle-fill btn-item' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z'/></svg></button></div>";
                             
-                            text += "<div class='col-2 text-center my-auto font-weight-bold'>"+book.price+" ฿</div></div>";
+                            text += "<div class='col-2 text-center my-auto font-weight-bold'>"+price+" ฿</div></div>";
                     }
                 }
             }
         }
     }
-    show.innerHTML = text;
+    document.getElementById("cartPage").innerHTML = text;
+    document.getElementById("myTotal").innerHTML = "Total "+total+" ฿";
+    document.getElementById("myItem").innerHTML = item+" ITEM";
+}
+
+function clearCart(){
+    var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
+    setCart = [];
+    localStorage.setItem("cart", JSON.stringify(setCart));
+    console.log("hey");
 }
