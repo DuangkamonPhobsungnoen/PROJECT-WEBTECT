@@ -47,8 +47,10 @@
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">Cash on delivery</label>
                     </div>
-                    <!-- <button type="submit" onclick="clearCart()">Test</button> -->
+                    
                     <button type="button" onclick="clearCart();" class="btn btn-close mt-4" data-toggle="modal" data-target="#exampleModal">CONFIRM ORDER</button>
+                    <div class="btn btn-close mt-4" onclick='history.back()'>CLOSE</div>
+
                 </form>
             </div>
         </div>

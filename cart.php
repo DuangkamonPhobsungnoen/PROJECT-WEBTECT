@@ -27,7 +27,7 @@
         <div class="text-right font-weight-bold h3 mt-5" style="color: #31ad99;" id="myTotal"></div>
         
         <div class="text-right">
-            <a href="order.php" style='text-decoration: none;'><div class="btn btn-close">CHECK OUT</div></a>
+            <div class="btn btn-close" onclick="checkItem()">CHECK OUT</div>
             <div class="btn btn-close" onclick='history.back()'>CLOSE</div>
         </div>
         

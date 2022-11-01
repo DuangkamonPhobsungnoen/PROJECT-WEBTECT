@@ -140,9 +140,9 @@ function addToCart(id) {
         setCart[id] = 1; //กำหนดให้ id นั้นมี 1 เล่ม
     else
         setCart[id] += 1;
+    localStorage.setItem("cart", JSON.stringify(setCart));   
     if (window.location.pathname == "/cart.php")
         myCart();
-    localStorage.setItem("cart", JSON.stringify(setCart));
 }
 
 function deleteFromCart(id) {
@@ -170,6 +170,7 @@ function myCart() {
 
 }
 
+var itemLocal = 0;
 function ExtractData3(data) {
     var inCart = JSON.parse(localStorage.getItem("cart") || '[]');
     let text = "";
@@ -186,7 +187,7 @@ function ExtractData3(data) {
                 text += "<div class='col-2 d-flex align-items-center'>";
                 text += "<img src='https://" + book.cover + "'class='img-fluid'></div>";
                 text += "<div class='col-6 d-flex align-items-center'>";
-                text += "<div><div class='h4'>" + book.title + "</div>";
+                text += "<div><a href='bookDetail.php' style='text-decoration:none; color:black;'><div class='h4' onclick='setBookById("+book.id+")'>" + book.title + "</div></a>";
                 text += "<div class='h5 text-muted'>" + book.writer + "</div></div></div>";
 
                 text += "<div class='col-2 d-flex align-items-center justify-content-center my-sm-3'>";
@@ -200,14 +201,25 @@ function ExtractData3(data) {
             }
         }
     }
+    localStorage.setItem("itemLocal", item);
     document.getElementById("cartPage").innerHTML = text;
     document.getElementById("myTotal").innerHTML = "Total " + total + " ฿";
     document.getElementById("myItem").innerHTML = item + " ITEM";
 }
 
+//รันปุ่ม Confirm Order
 function clearCart() {
     var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
     setCart = [];
     localStorage.setItem("cart", JSON.stringify(setCart));
     console.log("hey");
+}
+
+//รันปุ้ม Check Out
+function checkItem(){
+    var item = localStorage.getItem("itemLocal");
+    if(item==0)
+        alert("Your cart is empty!");
+    else
+        window.location.href="order.php";
 }
