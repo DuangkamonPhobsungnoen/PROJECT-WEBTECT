@@ -213,6 +213,27 @@ function clearCart() {
     setCart = [];
     localStorage.setItem("cart", JSON.stringify(setCart));
     console.log("hey");
+    let vname = document.getElementById("name").value;
+    if (vname.length < 2 || vname.length > 20) {
+        alert("Incorrect Name!");
+        return false;
+    }
+    let vtel = document.getElementById("tel").value;
+    if (vtel == "" || vtel.length != 10 || isNaN(vtel)) {
+        alert("Incorrect Tel.!");
+        return false;
+    }
+    let vadd = document.getElementById("add").value;
+    if (vadd.length < 4){
+        alert("Incorrect address!");
+        return false;
+    }
+    let vmail = document.getElementById("mail").value;
+    if (vmail == ""){
+        alert("Incorrect email!");
+        return false;
+    }
+    
 }
 
 //รันปุ้ม Check Out

@@ -20,22 +20,22 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input class="form-control" placeholder="Enter Name">
+                        <input class="form-control" placeholder="Enter Name" id="name">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Tel.</label>
-                        <input class="form-control" placeholder="Enter Phone Number">
+                        <input class="form-control" placeholder="Enter Phone Number" id="tel">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Address</label>
-                        <textarea class="form-control" placeholder="Enter Address"></textarea>
+                        <textarea class="form-control" placeholder="Enter Address" id="add"></textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Email</label>
-                        <input class="form-control" placeholder="Enter Email">
+                        <input class="form-control" placeholder="Enter Email" id="mail">
                     </div>
 
                     <div class="form-check">
