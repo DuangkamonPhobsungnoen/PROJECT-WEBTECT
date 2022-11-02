@@ -209,30 +209,48 @@ function ExtractData3(data) {
 
 //รันปุ่ม Confirm Order
 function clearCart() {
-    var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
-    setCart = [];
-    localStorage.setItem("cart", JSON.stringify(setCart));
-    console.log("hey");
     let vname = document.getElementById("name").value;
-    if (vname.length < 2 || vname.length > 20) {
-        alert("Incorrect Name!");
-        return false;
-    }
     let vtel = document.getElementById("tel").value;
-    if (vtel == "" || vtel.length != 10 || isNaN(vtel)) {
-        alert("Incorrect Tel.!");
+    let vadd = document.getElementById("add").value;
+    let vmail = document.getElementById("mail").value;
+    let text = "";
+
+    if (vname.length < 2 || vname.length > 20) {
+        alert("Incorrect name!");
         return false;
     }
-    let vadd = document.getElementById("add").value;
-    if (vadd.length < 4){
+    else if (vtel == "" || vtel.length != 10 || isNaN(vtel)) {
+        alert("Incorrect tel.!");
+        return false;
+    }
+    
+    else if (vadd.length < 4){
         alert("Incorrect address!");
         return false;
     }
-    let vmail = document.getElementById("mail").value;
-    if (vmail == ""){
+    else if (vmail == ""){
         alert("Incorrect email!");
         return false;
     }
+    else{
+        var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
+        setCart = [];
+        localStorage.setItem("cart", JSON.stringify(setCart));
+
+        text += "<div class='modal fade' id='exampleModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>";
+        text += "<div class='modal-dialog' role='document'>";
+        text += "<div class='modal-content'><div class='modal-header'>";
+        text += "<h5 class='modal-title' id='exampleModalLabel'>Order completed</h5>";
+        text += "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>";
+        text += "<span aria-hidden='true'>&times;</span></button></div><div class='modal-body text-center'>";
+        text += "<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='var(--green)' class='bi bi-check-circle' viewBox='0 0 16 16'>";
+        text += "<path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>";
+        text += "<path d='M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z'/>";
+        text += "</svg><h5 class='mt-2'>Thank You</h5></div><div class='modal-footer'><a href='index.php'>";
+        text += "<button type='button' class='btn btn-close'>BUY MORE BOOKS</button></a></div></div></div></div>";
+        document.getElementById("showModal").innerHTML = text;
+    }
+
     
 }
 
