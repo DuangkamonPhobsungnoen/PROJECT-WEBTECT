@@ -24,9 +24,9 @@
         <div class='container'>
             <div class="d-flex justify-content-center text-center">
                 <div class="row justify-content-center">
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate1" type="submit" class="btn btn-cat-inside b1" value="comic">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                                 class="bi bi-reddit" viewBox="0 0 16 16">
                                 <path
                                     d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
@@ -37,9 +37,9 @@
                         <br>
                         <p>Comic</p>
                     </div>
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate2" type="submit" class="btn btn-cat-inside b2" value="comicessay">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z" />
@@ -52,9 +52,9 @@
                         <br>
                         <p>Comic<br>Essayy</p>
                     </div>
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate3" type="submit" class="btn btn-cat-inside b3" value="conceptidea">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="bi bi-lightbulb" viewBox="0 0 16 16">
                                 <path
                                     d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
@@ -63,9 +63,9 @@
                         <br>
                         <p>Concept<br>Idea</p>
                     </div>
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate4" type="submit" class="btn btn-cat-inside b4" value="culture">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="bi bi-yin-yang" viewBox="0 0 16 16">
                                 <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0Z" />
                                 <path
@@ -75,9 +75,9 @@
                         <br>
                         <p>Culture</p>
                     </div>
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate5" type="submit" class="btn btn-cat-inside b5" value="novel">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="bi bi-book" viewBox="0 0 16 16">
                                 <path
                                     d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
@@ -86,9 +86,9 @@
                         <br>
                         <p>Novel</p>
                     </div>
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate6" type="submit" class="btn btn-cat-inside b6" value="journey">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="bi bi-pin-map" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
@@ -99,9 +99,9 @@
                         <br>
                         <p>Journey</p>
                     </div>
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate7" type="submit" class="btn btn-cat-inside b7" value="memoir">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="bi bi-card-image" viewBox="0 0 16 16">
                                 <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
                                 <path
@@ -111,9 +111,9 @@
                         <br>
                         <p>Memoir</p>
                     </div>
-                    <div class="btn-cat m-4">
+                    <div class="btn-cat m-4 type-color">
                         <button name="cate8" type="submit" class="btn btn-cat-inside b8" value="nonfiction">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="bi bi-x-octagon" viewBox="0 0 16 16">
                                 <path
                                     d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z" />

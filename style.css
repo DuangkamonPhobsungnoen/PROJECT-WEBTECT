@@ -48,85 +48,103 @@ ul.navbar-nav a:active {
     overflow: hidden;
 }
 
-a{
-    text-decoration: none;;
+a {
+    text-decoration: none;
+    ;
 }
+
 
 /* ปุ่ม category */
 
-.btn-cat{
+.btn-cat {
     text-align: center;
     padding: 0px;
-    font-size:15px;
+    font-size: 15px;
     border-radius: 7px;
-    }
-.btn-cat-inside{
+}
+
+.btn-cat-inside {
     width: 50px;
     height: 50px;
 }
-.b1{
+
+.b1 {
     background-color: #CC80C4;
 }
-.b2{
+
+.b2 {
     background-color: #F4DB9B;
 }
-.b3{
+
+.b3 {
     background-color: #83C8DE;
 }
-.b4{
+
+.b4 {
     background-color: #ED8181;
 }
-.b5{
+
+.b5 {
     background-color: #78B694;
 }
-.b6{
+
+.b6 {
     background-color: #7489D1;
 }
-.b7{
+
+.b7 {
     background-color: #D3CE50;
 }
-.b8{
+
+.b8 {
     background-color: #E09149;
 }
 
+
 /* ปุ่ม get some book ตรง home -> reccommend */
-.b9{
+
+.b9 {
     letter-spacing: 0.1em;
     color: var(--green);
     background-color: white;
     transition: all .2s ease-in-out;
 }
 
-.b9:hover{
+.b9:hover {
     transform: scale(1.1);
 }
 
-.frame{
+.frame {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 
+
 /* hover หน้า article */
-.frame2{
+
+.frame2 {
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     transition: all .2s ease-in-out;
 }
 
-.frame2:hover{
+.frame2:hover {
     box-shadow: 0px 0px 10px 0px var(--green);
     transform: scale(1.05);
 }
 
+
 /* ไว้ใช้ฟ้อน sarabun */
 
-.detail{
+.detail {
     font-family: 'Sarabun', sans-serif;
 }
 
+
 /* ปุ่ม add to cart ใน book detail */
-.btn-cart{
+
+.btn-cart {
     background-color: var(--green);
     color: white;
     border-radius: 16px;
@@ -134,85 +152,112 @@ a{
     cursor: pointer;
 }
 
-.btn-cart:hover{
+.btn-cart:hover {
     background-color: var(--red);
 }
 
+
 /* hover ส่วน article หน้า home */
 
-.textGreen{
+.textGreen {
     color: black;
     transition: color 0.5s ease;
 }
 
-.textGreen:hover{
+.textGreen:hover {
     color: var(--green);
 }
 
+
 /* hover ส่วน reccomend */
 
-.rec1{
+.rec1 {
     background-color: var(--green);
     color: white;
 }
-.rec2{
+
+.rec2 {
     background-color: #98c9a3;
     transition: all .2s ease-in-out;
 }
-.rec3{
+
+.rec3 {
     background-color: #dde7c7;
     transition: all .2s ease-in-out;
 }
-.rec4{
+
+.rec4 {
     background-color: #edeec9;
     transition: all .2s ease-in-out;
 }
 
-.rec2:hover{
-    background-color: white;
-    transform: scale(1.05);
-}
-.rec3:hover{
-    background-color: white;
-    transform: scale(1.05);
-}
-.rec4:hover{
+.rec2:hover {
     background-color: white;
     transform: scale(1.05);
 }
 
+.rec3:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.rec4:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+
 /* hover หน้า book */
-.bookHov{
+
+.bookHov {
     transition: all .2s ease-in-out;
 }
-.bookHov:hover{
+
+.bookHov:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
+
 /* เปลี่ยนสีลูกศร slideBook */
+
 .carousel-control-next,
 .carousel-control-prev,
-.carousel-indicators{
+.carousel-indicators {
     filter: invert(100%);
     width: 5%;
 }
 
-.btn-close{
+.btn-close {
     background-color: var(--green);
     color: white;
     transition: all .3s ease-in-out;
 }
-.btn-close:hover{
+
+.btn-close:hover {
     background-color: var(--red);
 }
 
-.con{
+.con {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.btn-item:hover{
+.btn-item:hover {
     fill: var(--red);
+}
+
+
+/* ขยับประเภทตัวอักษร */
+
+.type-color {
+    transition: all .3s ease-in-out;
+    fill: #fff;
+}
+
+.type-color:hover {
+    transform: scale(1.15);
+    fill: rgb(0, 0, 0);
+    color: #fff;
 }
