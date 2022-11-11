@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 * {
     --green: #31ad99;
     --red: #c42c21;
@@ -260,4 +261,22 @@ a {
     transform: scale(1.15);
     fill: rgb(0, 0, 0);
     color: #fff;
+}
+
+.text-getCate {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+    color: var(--green);
+    text-shadow: rgb(165, 165, 165) 0.1em 0.1em 0.2em;
+    transform-origin: center;
+    transition-property: transform, color;
+    transition-duration: 1s, 2s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: ease-out;
+}
+
+.text-getCate:hover {
+    color: #c42c21;
+    transform: scale(1.1, 1.1);
 }

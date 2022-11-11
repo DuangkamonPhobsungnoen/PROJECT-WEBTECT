@@ -181,7 +181,7 @@
                     }
                 }
             } else {
-                echo "<div class='h2 text-center col-12 mb-5 text-uppercase' style='letter-spacing:0.1em; color:var(--green);'>$getCate</div>";
+                echo "<div class='text-getCate text-center col-12 mb-5 text-uppercase'>$getCate</div>";
                 foreach ($result as $category) {
                     foreach ($category as $book) {
                         if ($book->cate2 == $getCate) {
