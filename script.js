@@ -150,7 +150,7 @@ function addToCart(id) {
 function deleteFromCart(id) {
     var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
     if (setCart[id] == 1)
-        setCart[id] = null; //กำหนดให้ id นั้นมี 1 เล่ม
+        setCart[id] = null;
     else
         setCart[id] -= 1;
     localStorage.setItem("cart", JSON.stringify(setCart));
@@ -186,10 +186,12 @@ function ExtractData3(data) {
                 total += price;
                 //ดูโค้ดสวยๆใน cartDemo.html
                 text += "<div class='row frame py-3 my-4'>";
+
                 text += "<div class='col-2 d-flex align-items-center'>";
                 text += "<img src='https://" + book.cover + "'class='img-fluid'></div>";
-                text += "<div class='col-6 d-flex align-items-center'>";
-                text += "<div><a href='bookDetail.php' style='text-decoration:none; color:black;'><div class='h4' onclick='setBookById("+book.id+")'>" + book.title + "</div></a>";
+
+                text += "<div class='col-6 d-flex align-items-center'><div>";
+                text += "<a href='bookDetail.php' onclick='setBookByID("+book.id+")' style='text-decoration:none; color:black;'><div class='h4'>" + book.title + "</div></a>";
                 text += "<div class='h5 text-muted'>" + book.writer + "</div></div></div>";
 
                 text += "<div class='col-2 d-flex align-items-center justify-content-center my-sm-3'>";
