@@ -143,6 +143,8 @@ function addToCart(id) {
     localStorage.setItem("cart", JSON.stringify(setCart));   
     if (window.location.pathname == "/cart.php")
         myCart();
+    else
+        alert("Books added to cart");
 }
 
 function deleteFromCart(id) {
