@@ -1,5 +1,5 @@
 <div class="container my-5">
-        <h1>Recommend</h1>
+        <div class='text-home-left'> Recommend <br> ⤹ </div>
         <div class="row">
 
             <div class="col-lg-3 col-md-6 col-sm-6 py-2">

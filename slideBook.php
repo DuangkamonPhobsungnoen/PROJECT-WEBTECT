@@ -5,7 +5,7 @@
     $response = file_get_contents($url);
     $result = json_decode($response);
     echo "<div class='container'>
-            <h1>New Release</h1> <br>
+            <div class='text-home-right'>New Release <br> ⤸</div>
                 <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel'>
                     <div class='carousel-inner'>";
     foreach ($result as $category) {

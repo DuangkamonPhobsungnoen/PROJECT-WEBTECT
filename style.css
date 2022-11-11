@@ -280,3 +280,41 @@ a {
     color: #c42c21;
     transform: scale(1.1, 1.1);
 }
+
+.text-home-right {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: var(--green);
+    text-shadow: rgb(165, 165, 165) 0.1em 0.1em 0.4em;
+    transform-origin: center;
+    transition-property: transform, color;
+    transition-duration: 1s, 2s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: ease-out;
+    font-style: italic;
+    text-align: right;
+}
+
+.text-home-right:hover {
+    color: #c42c21;
+    transform: scale(1.1, 1.1);
+}
+
+.text-home-left {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: var(--green);
+    text-shadow: rgb(165, 165, 165) 0.1em 0.1em 0.4em;
+    transform-origin: center;
+    transition-property: transform, color;
+    transition-duration: 1s, 2s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: ease-out;
+    font-style: italic;
+    text-align: left;
+}
+
+.text-home-left:hover {
+    color: #c42c21;
+    transform: scale(1.1, 1.1);
+}

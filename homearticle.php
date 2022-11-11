@@ -4,7 +4,7 @@
     $response2 = file_get_contents($url2);
     $result2 = json_decode($response2);
     echo "<div class='container'>";
-    echo "<h1>Articles</h1> <br>";
+    echo "<div class='text-home-right'>Articles <br> ⤸ </div>";
     echo "<div class='row'>";
     foreach ($result2 as $article) {
         $ans = $article->id;
