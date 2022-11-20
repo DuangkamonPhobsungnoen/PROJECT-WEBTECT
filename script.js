@@ -18,6 +18,7 @@ function setBook(id1, cover1, title1, writer1, price1, des1, cat1) {
     localStorage.setItem("price", price1);
     localStorage.setItem("des", des1);
     localStorage.setItem("cat", cat1);
+    window.location.pathname = "/bookDetail.php"
 }
 
 // เริ่มรันตอนเปิด bookDetail
@@ -140,11 +141,15 @@ function addToCart(id) {
         setCart[id] = 1; //กำหนดให้ id นั้นมี 1 เล่ม
     else
         setCart[id] += 1;
-    localStorage.setItem("cart", JSON.stringify(setCart));   
-    if (window.location.pathname == "/cart.php")
-        myCart();
-    else
+    localStorage.setItem("cart", JSON.stringify(setCart));  
+    
+    if (window.location.pathname == "/project/it2/bookDetail.php"){
         alert("Books added to cart");
+    }
+    else{
+        myCart();
+    }
+        
 }
 
 function deleteFromCart(id) {
