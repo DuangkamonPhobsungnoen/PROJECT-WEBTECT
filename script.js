@@ -9,18 +9,6 @@ var cat = "Default Category";
 var text2 = "";
 var allCat = ["comic", "comicessay", "conceptidea", "culture", "novel", "journey", "memoir", "nonfiction"]; //ไว้ช่วยรันลูปไล่หนังสือ
 
-//เซ็ตข้อมูลหนังสือหน้า bookDetail
-function setBook(id1, cover1, title1, writer1, price1, des1, cat1) {
-    localStorage.setItem("id", id1);
-    localStorage.setItem("cover", cover1);
-    localStorage.setItem("title", title1);
-    localStorage.setItem("writer", writer1);
-    localStorage.setItem("price", price1);
-    localStorage.setItem("des", des1);
-    localStorage.setItem("cat", cat1);
-    window.location.pathname = "/bookDetail.php"
-}
-
 // เริ่มรันตอนเปิด bookDetail
 function startBookDetail() {
     bookDetail();
@@ -70,28 +58,25 @@ function ExtractData1(data) {
     var id = localStorage.getItem("id");
     var cat = localStorage.getItem("cat");
     let b = 0; // ปริ้นแค่ 4 เล่ม
+    for (book of data[cat]) {
+        if ((book.id != id) && (book.id % 2 != id % 2)) {
+            let show = document.getElementById("showRelate");
+            text2 += "<div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";
+            text2 += "<a href='bookDetail.php' onclick='setBookByID(" + book.id + ")' style='text-decoration: none;'>";
+            text2 += "<div class='card border-0'>";
+            text2 += "<img class='card-img-top bg-grey' src='https://" + book.cover + "'>";
+            text2 += "<div class='card-body text-left'>";
+            text2 += "<h5 class='card-title text-dark font-weight-bold mb-0'>" + book.title + "</h5>";
+            text2 += "<p class='text-muted small'>" + book.writer + "</p>";
+            text2 += "<h5 class='font-weight-bold' style='color:var(--green);'>฿" + book.price + "</h5> ";
+            text2 += "</div></div></a></div>";
+            show.innerHTML = text2;
 
-    for (let i = 0; i < 8; i++) {
-        for (book of data[allCat[i]]) {
-            if ((book.cate2 == cat) && (book.id != id) && (book.id % 2 != id % 2)) {
-                let show = document.getElementById("showRelate");
-                text2 += "<div class='col-lg-3 col-md-4 col-sm-6 mb-5'>";
-                text2 += "<a href='bookDetail.php' onclick='setBookByID(" + book.id + ")' style='text-decoration: none;'>";
-                text2 += "<div class='card border-0'>";
-                text2 += "<img class='card-img-top bg-grey' src='https://" + book.cover + "'>";
-                text2 += "<div class='card-body text-left'>";
-                text2 += "<h5 class='card-title text-dark font-weight-bold mb-0'>" + book.title + "</h5>";
-                text2 += "<p class='text-muted small'>" + book.writer + "</p>";
-                text2 += "<h5 class='font-weight-bold' style='color:var(--green);'>฿" + book.price + "</h5> ";
-                text2 += "</div></div></a></div>";
-                show.innerHTML = text2;
-
-                b++;
-                if (b == 4) {
-                    break;
-                }
-
+            b++;
+            if (b == 4) {
+                break;
             }
+
         }
     }
 }
@@ -115,7 +100,14 @@ function ExtractData2(data, id) {
     for (let i = 0; i < 8; i++) {
         for (book of data[allCat[i]]) {
             if (book.id == id) {
-                setBook(book.id, book.cover, book.title, book.writer, book.price, book.description, book.cate2);
+                localStorage.setItem("id", book.id);
+                localStorage.setItem("cover", book.cover);
+                localStorage.setItem("title", book.title);
+                localStorage.setItem("writer", book.writer);
+                localStorage.setItem("price", book.price);
+                localStorage.setItem("des", book.description);
+                localStorage.setItem("cat", book.cate2);
+                window.location.href = "/bookDetail.php"
             }
         }
     }
@@ -141,15 +133,18 @@ function addToCart(id) {
         setCart[id] = 1; //กำหนดให้ id นั้นมี 1 เล่ม
     else
         setCart[id] += 1;
-    localStorage.setItem("cart", JSON.stringify(setCart));  
-    
-    if (window.location.pathname == "/bookDetail.php"){
+    localStorage.setItem("cart", JSON.stringify(setCart));
+
+
+    var part = window.location.pathname.split("/");
+    part = part.pop();
+    if (part == "bookDetail.php") {
         alert("Books added to cart");
     }
-    else{
+    else {
         myCart();
     }
-        
+
 }
 
 function deleteFromCart(id) {
@@ -196,7 +191,7 @@ function ExtractData3(data) {
                 text += "<img src='https://" + book.cover + "'class='img-fluid'></div>";
 
                 text += "<div class='col-6 d-flex align-items-center'><div>";
-                text += "<a href='bookDetail.php' onclick='setBookByID("+book.id+")' style='text-decoration:none; color:black;'><div class='h4'>" + book.title + "</div></a>";
+                text += "<a href='bookDetail.php' onclick='setBookByID(" + book.id + ")' style='text-decoration:none; color:black;'><div class='h4'>" + book.title + "</div></a>";
                 text += "<div class='h5 text-muted'>" + book.writer + "</div></div></div>";
 
                 text += "<div class='col-2 d-flex align-items-center justify-content-center my-sm-3'>";
@@ -232,16 +227,16 @@ function clearCart() {
         alert("Incorrect tel.!");
         return false;
     }
-    
-    else if (vadd.length < 4){
+
+    else if (vadd.length < 4) {
         alert("Incorrect address!");
         return false;
     }
-    else if (vmail == ""){
+    else if (vmail == "") {
         alert("Incorrect email!");
         return false;
     }
-    else{
+    else {
         var setCart = JSON.parse(localStorage.getItem("cart") || '[]');
         setCart = [];
         localStorage.setItem("cart", JSON.stringify(setCart));
@@ -260,14 +255,14 @@ function clearCart() {
         document.getElementById("showModal").innerHTML = text;
     }
 
-    
+
 }
 
 //รันปุ้ม Check Out
-function checkItem(){
+function checkItem() {
     var item = localStorage.getItem("itemLocal");
-    if(item==0)
+    if (item == 0)
         alert("Your cart is empty!");
     else
-        window.location.href="order.php";
+        window.location.href = "order.php";
 }

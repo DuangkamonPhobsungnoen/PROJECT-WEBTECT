@@ -9,8 +9,11 @@
                 บุษบาวรรณ ประเสริฐสุข 64070175 <br>
             </div>
             <div class="col-sm-6 text-right">
-                <img src="https://cdn.discordapp.com/attachments/1031228521613381724/1031851542275440640/it_logo-removebg-preview.png"
-                    width="100px" height="100px"><br>
+                <a href="https://www.it.kmitl.ac.th/en" target="blank"><img src="https://cdn.discordapp.com/attachments/1031228521613381724/1031851542275440640/it_logo-removebg-preview.png"
+                    width="100px" height="100px"></a>
+                <a href="https://github.com/Dnuangkamon/Sababooks" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    width="60px" height="60px"></a>
+                <br>
                 เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Web Technology <br>
                 คณะเทคโนโลยีสารสนเทศสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง <br>
             </div>

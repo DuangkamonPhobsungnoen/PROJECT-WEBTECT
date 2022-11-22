@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
     <title>Sababooks</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1024907708136161321/1044534266782027827/logo.png">
 </head>
 
 <body onload="setActive('nav2');">

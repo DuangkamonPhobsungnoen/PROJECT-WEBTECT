@@ -12,7 +12,7 @@
 >* Json ใช้รวบรวมข้อมูลแล้วดึงข้อมูลมาใส่ใน Html
 >* Php ใช้ดึงข้อมูลใน Json ทำให้เป็นระเบียบมากขึ้น
 ## ข้อมูลที่ใช้
->ข้อมูลจาก https://salmonbooks.net/ โดยเลือกใช้ ข้อมูลประเภทของหนังสือ, รายละเอียดบทความ และอื่นๆ
+>ข้อมูลจาก https://salmonbooks.net/ และ https://amarinbooks.com โดยเลือกใช้ ข้อมูลประเภทของหนังสือ, รายละเอียดบทความ และอื่นๆ
 ## แผนภาพ
 >**`Figma`**
 **[Click link](https://www.figma.com/file/8t2KfjGchE0swQF0Cy7pbi/webTech?node-id=0%3A1)**
