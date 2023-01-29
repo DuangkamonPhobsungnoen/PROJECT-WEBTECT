@@ -28,7 +28,7 @@
 >* Json ใช้รวบรวมข้อมูลแล้วดึงข้อมูลมาใส่ใน Html
 >* Php ใช้ดึงข้อมูลใน Json ทำให้เป็นระเบียบมากขึ้น
 
-## Tools 🛠️
+## Tools 
 > **`เครื่องมือในการสร้าง`**
 > 
 > 1.visual studio code
@@ -38,18 +38,23 @@
 >3.Figma
 >
 >4.Canva
+>
+>5.Doc
 
-
-## Reference
-> https://salmonbooks.net/ และ https://amarinbooks.com โดยเลือกใช้ ข้อมูลประเภทของหนังสือ, รายละเอียดบทความ และอื่นๆ
+## Doc Proposal 
+>**`แบบเสนอโครงงาน`**
+**[Click link](https://docs.google.com/document/d/1cBylLpqwsCPBA8B9kEVW9JDanb1l60OqsxNqfDC1-Tk/edit)**
 
 ## Figma
 >**`ออกแบบ`**
-**[Click link](https://www.figma.com/file/8t2KfjGchE0swQF0Cy7pbi/webTech?node-id=0%3A1)**
+**[Click link](https://www.figma.com/file/8t2KfjGchE0swQF0Cy7pbi/Sababooks?node-id=0%3A1)**
 
 ## Report
 >**`รายงาน`**
-**[Click link](https://www.figma.com/file/8t2KfjGchE0swQF0Cy7pbi/webTech?node-id=0%3A1)**
+**[Click link](https://www.canva.com/design/DAFQnZ3-2Uk/mu4kN_x_audDBJ0n1dTIVQ/edit?utm_content=DAFQnZ3-2Uk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
+
+## Reference
+> https://salmonbooks.net/ และ https://amarinbooks.com โดยเลือกใช้ ข้อมูลประเภทของหนังสือ, รายละเอียดบทความ และอื่นๆ
 
 ## Developer
 | Student ID | Name - Surname |  Responsible | Github |
